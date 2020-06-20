@@ -1,5 +1,5 @@
 <template>
-	<img :src="'https://ghchart.rshah.org/' + username"></img>
+	<img class="githubContributions" :src="'https://ghchart.rshah.org/' + username"></img>
 </template>
 
 <script>
@@ -12,3 +12,9 @@ export default {
 	},
 }
 </script>
+
+<style>
+.githubContributions {
+	width: 100%;
+}
+</style>

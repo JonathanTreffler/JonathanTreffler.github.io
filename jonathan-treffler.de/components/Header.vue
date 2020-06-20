@@ -1,15 +1,28 @@
 <template>
-	<div>
-		<GithubContributions username="TessyPowder" />
+	<div class="header">
+		<MaterialCard>
+			<h1>Jonathan Treffler</h1>
+		</MaterialCard>
 	</div>
 </template>
 
 <script>
-import GithubContributions from '~/components/GithubContributions.vue'
+import MaterialCard from '~/components/MaterialCard.vue'
 
 export default {
 	components: {
-		GithubContributions,
+		MaterialCard,
 	},
 }
 </script>
+
+<style>
+.header {
+	width: 90%;
+	margin: auto;
+	height: fit-content;
+}
+h1 {
+	text-align: center;
+}
+</style>
