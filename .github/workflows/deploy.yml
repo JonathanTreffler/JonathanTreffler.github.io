@@ -1,0 +1,32 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+      
+    - name: "Install Dependencies"
+      run: npm install
+      working-directory: jonathan-treffler.de
+      
+    - name: "Build static Website"
+      run: npm run generate
+      working-directory: jonathan-treffler.de
+      
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@3.5.5
+      with:
+        BRANCH: master
+        FOLDER: jonathan-treffler.de/dist/
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BASE_BRANCH: dev
+        SINGLE_COMMIT: true
