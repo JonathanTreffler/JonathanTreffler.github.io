@@ -1,5 +1,7 @@
 # jonathan-treffler.de
 
+![](https://raw.githubusercontent.com/TessyPowder/TessyPowder.github.io/dev/img/jonathan-treffler.de.png)
+
 ## Build Setup
 
 ```bash
