@@ -21,7 +21,6 @@
 				icon="https://assets.gitlab-static.net/uploads/-/system/project/avatar/19941333/favicon.png"
 				href="https://gitlab.com/fractava/biblio"
 			/>
-
 		</ProjectsContainer>
 		<ProjectsContainer title="School Squirrel">
 			<Project

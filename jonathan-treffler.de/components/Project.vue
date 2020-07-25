@@ -59,9 +59,10 @@ export default {
 	align-self: center;
 }
 .projectLogo {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  object-fit: contain;
 }
 .projectName {
 	text-align: center;
