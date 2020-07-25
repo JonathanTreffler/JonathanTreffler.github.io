@@ -1,5 +1,28 @@
 <template>
 	<div>
+		<ProjectsContainer title="FRACATVA">
+			<Project
+				name="Notes Core"
+				icon="https://raw.githubusercontent.com/fractava/notes-resources/master/Notes.png"
+				href="https://github.com/fractava/notes-core"
+			/>
+			<Project
+				name="Notes Desktop"
+				icon="https://raw.githubusercontent.com/fractava/notes-resources/master/Notes.png"
+				href="https://github.com/fractava/notes-desktop"
+			/>
+			<Project
+				name="fractava.com"
+				icon="https://raw.githubusercontent.com/fractava/resources/master/Logos/Symbol/klein%20(f%C3%BCr%20Profilbilder)/transparenter%20Hintergrund/Farbe%20schwarz.png"
+				href="https://gitlab.com/fractava/fractava.com"
+			/>
+			<Project
+				name="biblio"
+				icon="https://assets.gitlab-static.net/uploads/-/system/project/avatar/19941333/favicon.png"
+				href="https://gitlab.com/fractava/biblio"
+			/>
+
+		</ProjectsContainer>
 		<ProjectsContainer title="School Squirrel">
 			<Project
 				name="School Squirrel"
