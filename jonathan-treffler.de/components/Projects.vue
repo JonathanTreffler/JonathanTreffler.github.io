@@ -17,7 +17,7 @@
 				href="https://github.com/SchoolSquirrel/SquirrelChatUI"
 			/>
 		</ProjectsContainer>
-		<ProjectsContainer title="Jugend Forscht 2019">
+		<ProjectsContainer title="Jugend Forscht Quantum 2019">
 			<Project
 				name="Jufo: Quantum Computing"
 				icon="/projects/jugend-forscht.jpg"
@@ -42,6 +42,18 @@
 				name="Jufo: n Queens Chess App"
 				icon="https://raw.githubusercontent.com/Quantum-Computing-Jufo-2019/n-Queens-Android/master/src/nDamen_Schachfeld_Android/icon-144.png"
 				href="https://github.com/Quantum-Computing-Jufo-2019/n-Queens-Android"
+			/>
+		</ProjectsContainer>
+		<ProjectsContainer title="Jugend Forscht Ameisen 2019">
+			<Project
+				name="Jufo: Ameisen 2019"
+				icon="/projects/jugend-forscht.jpg"
+				href="https://github.com/jufo-ameisen-2019/Jufo-Ameisen-2019"
+			/>
+			<Project
+				name="Ameisen Demo"
+				icon="/projects/jugend-forscht.jpg"
+				href="https://github.com/jufo-ameisen-2019/ameisen-demo"
 			/>
 		</ProjectsContainer>
 		<ProjectsContainer title="Jugend Forscht 2016">
