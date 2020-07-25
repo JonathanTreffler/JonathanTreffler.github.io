@@ -70,6 +70,18 @@
 				href="https://github.com/TessyPowder/hacs-websocket-service"
 			/>
 		</ProjectsContainer>
+		<ProjectsContainer title="Quill">
+			<Project
+				name="mathQuill Blot"
+				icon="/projects/quill.png"
+				href="https://github.com/TessyPowder/Quill-mathQuill-blot"
+			/>
+			<Project
+				name="mathLive Blot"
+				icon="/projects/quill.png"
+				href="https://github.com/TessyPowder/Quill-mathLive-blot"
+			/>
+		</ProjectsContainer>
 		<ProjectsContainer title="Miscellaneous">
 			<Project
 				name="Flowupload"
