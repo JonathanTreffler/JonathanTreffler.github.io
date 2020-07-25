@@ -44,6 +44,28 @@
 				href="https://github.com/Quantum-Computing-Jufo-2019/n-Queens-Android"
 			/>
 		</ProjectsContainer>
+		<ProjectsContainer title="Jugend Forscht 2016">
+			<Project
+				name="Chickomat"
+				icon="https://raw.githubusercontent.com/chickomat/Chickomat/master/Bilder/icon.png"
+				href="https://github.com/chickomat/Chickomat"
+			/>
+			<Project
+				name="chickomat.github.io"
+				icon="https://raw.githubusercontent.com/chickomat/Chickomat/master/Bilder/icon.png"
+				href="https://chickomat.github.io"
+			/>
+			<Project
+				name="Chickomat Raspberry Software"
+				icon="https://raw.githubusercontent.com/chickomat/Chickomat/master/Bilder/icon.png"
+				href="https://github.com/chickomat/raspberry-control-software"
+			/>
+			<Project
+				name="Chickomat Arduino Software"
+				icon="https://raw.githubusercontent.com/chickomat/Chickomat/master/Bilder/icon.png"
+				href="https://github.com/chickomat/arduino-control-software"
+			/>
+		</ProjectsContainer>
 		<ProjectsContainer title="King of Planets">
 			<Project
 				name="King of Planets"
