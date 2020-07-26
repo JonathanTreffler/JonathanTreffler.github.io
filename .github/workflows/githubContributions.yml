@@ -1,11 +1,8 @@
 name: Github Contributions Chart Download
 
 on:
-  push:
-    branches:
-      - dev
   schedule:
-    - cron:  '* */1 * * *'
+    - cron:  '0 */2 * * *'
 
 jobs:
   download:
