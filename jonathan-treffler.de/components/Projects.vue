@@ -13,7 +13,7 @@
 			/>
 			<Project
 				name="fractava.com"
-				icon="https://raw.githubusercontent.com/fractava/resources/master/Logos/Symbol/klein%20(f%C3%BCr%20Profilbilder)/transparenter%20Hintergrund/Farbe%20schwarz.png"
+				icon="/projects/fractava.webp"
 				href="https://gitlab.com/fractava/fractava.com"
 			/>
 			<Project
