@@ -153,7 +153,7 @@
 			/>
 			<Project
 				name="Kdenlive VNC Docker"
-				icon="https://raw.githubusercontent.com/TessyPowder/kdenlive-vnc-docker/master/img/kdenlive-logo.png"
+				icon="/projects/kdenlive.webp"
 				href="https://github.com/TessyPowder/kdenlive-vnc-docker"
 			/>
 		</ProjectsContainer>
