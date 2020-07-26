@@ -25,17 +25,17 @@
 		<ProjectsContainer title="School Squirrel">
 			<Project
 				name="School Squirrel"
-				icon="https://raw.githubusercontent.com/SchoolSquirrel/ci/master/logo/logo.png"
+				icon="/projects/schoolSquirrel.webp"
 				href="https://github.com/SchoolSquirrel/SchoolSquirrel"
 			/>
 			<Project
 				name="School Squirrel Fcm Relay"
-				icon="https://raw.githubusercontent.com/SchoolSquirrel/ci/master/logo/logo.png"
+				icon="/projects/schoolSquirrel.webp"
 				href="https://github.com/SchoolSquirrel/SquirrelFcmRelay"
 			/>
 			<Project
 				name="School Squirrel Chat"
-				icon="https://raw.githubusercontent.com/SchoolSquirrel/ci/master/logo/logo.png"
+				icon="/projects/schoolSquirrel.webp"
 				href="https://github.com/SchoolSquirrel/SquirrelChatUI"
 			/>
 		</ProjectsContainer>
