@@ -1,0 +1,31 @@
+name: Github Contributions Chart Download
+
+on:
+  schedule:
+    - cron:  '* */1 * * *'
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+    
+    - name: Download
+      run: curl https://ghchart.rshah.org/TessyPowder > githubContributions.svg
+      working-directory: jonathan-treffler.de/static
+    
+    - name: Commit files
+      run: |
+        git config --local user.email "mail@jonathan-treffler.de"
+        git config --local user.name "TessyPowder"
+        git commit -m "Updated github Contributions Chart" -a
+    
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: dev
