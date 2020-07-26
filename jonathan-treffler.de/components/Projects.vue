@@ -129,12 +129,12 @@
 		<ProjectsContainer title="Quill">
 			<Project
 				name="mathQuill Blot"
-				icon="/projects/quill.png"
+				icon="/projects/quill.webp"
 				href="https://github.com/TessyPowder/Quill-mathQuill-blot"
 			/>
 			<Project
 				name="mathLive Blot"
-				icon="/projects/quill.png"
+				icon="/projects/quill.webp"
 				href="https://github.com/TessyPowder/Quill-mathLive-blot"
 			/>
 		</ProjectsContainer>
