@@ -148,7 +148,7 @@
 			/>
 			<Project
 				name="wann-tritt-scheuer-zurück.de"
-				icon="https://raw.githubusercontent.com/TessyPowder/Wann-tritt-Scheuer-zurueck/master/src/assets/scheuer.png"
+				icon="/projects/scheuer.webp"
 				href="https://github.com/TessyPowder/Wann-tritt-Scheuer-zurueck"
 			/>
 			<Project
