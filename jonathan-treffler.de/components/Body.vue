@@ -3,7 +3,7 @@
 		<Favorites />
 		<MaterialCard>
 			<h2>Github Contributions:</h2>
-			<GithubContributions username="TessyPowder" />
+			<GithubContributions />
 		</MaterialCard>
 		<Projects />
 	</div>
