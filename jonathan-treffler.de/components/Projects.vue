@@ -3,12 +3,12 @@
 		<ProjectsContainer title="FRACATVA">
 			<Project
 				name="Notes Core"
-				icon="https://raw.githubusercontent.com/fractava/notes-resources/master/Notes.png"
+				icon="/projects/Notes.webp"
 				href="https://github.com/fractava/notes-core"
 			/>
 			<Project
 				name="Notes Desktop"
-				icon="https://raw.githubusercontent.com/fractava/notes-resources/master/Notes.png"
+				icon="/projects/Notes.webp"
 				href="https://github.com/fractava/notes-desktop"
 			/>
 			<Project
