@@ -1,17 +1,6 @@
 <template>
-	<img class="githubContributions" :src="'https://ghchart.rshah.org/' + username"></img>
+	<img class="githubContributions" src="githubContributions.svg"></img>
 </template>
-
-<script>
-export default {
-	props: {
-		username: {
-			default: '',
-			type: String,
-		},
-	},
-}
-</script>
 
 <style>
 .githubContributions {
