@@ -1,3 +1,6 @@
+[![](https://img.shields.io/badge/PageSpeed%20Desktop-99%25-green)](https://developers.google.com/speed/pagespeed/insights/?hl=de&url=jonathan-treffler.de&tab=desktop)
+[![](https://img.shields.io/badge/PageSpeed%20Mobile-89%25-green)](https://developers.google.com/speed/pagespeed/insights/?hl=de&url=jonathan-treffler.de)
+
 # jonathan-treffler.de
 
 ![](https://raw.githubusercontent.com/TessyPowder/TessyPowder.github.io/dev/img/jonathan-treffler.de.png)
