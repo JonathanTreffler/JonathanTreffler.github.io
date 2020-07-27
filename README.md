@@ -1,6 +1,7 @@
 [![PageSpeed Desktop](https://img.shields.io/badge/PageSpeed%20Desktop-99%25-green)](https://developers.google.com/speed/pagespeed/insights/?hl=de&url=jonathan-treffler.de&tab=desktop)
 [![PageSpeed Mobile](https://img.shields.io/badge/PageSpeed%20Mobile-89%25-green)](https://developers.google.com/speed/pagespeed/insights/?hl=de&url=jonathan-treffler.de)
 [![License](https://img.shields.io/github/license/TessyPowder/TessyPowder.github.io)](https://github.com/TessyPowder/TessyPowder.github.io/blob/dev/LICENSE)
+![Lint](https://github.com/TessyPowder/TessyPowder.github.io/workflows/Lint/badge.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/TessyPowder/TessyPowder.github.io)
 
 # jonathan-treffler.de
