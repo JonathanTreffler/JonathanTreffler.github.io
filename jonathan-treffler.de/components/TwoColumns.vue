@@ -19,12 +19,15 @@ export default {
 	height: fit-content;
 }
 .twoColumns>* {
-	width :50%;
+	width: 50%;
 	min-height: 100% !important;
 }
 @media (pointer:none), (pointer:coarse) {
 	.twoColumns {
 		flex-direction: column;
+	}
+	.twoColumns>* {
+		width: 100%;
 	}
 }
 </style>
