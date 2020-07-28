@@ -46,12 +46,12 @@
 				href="https://github.com/Quantum-Computing-Jufo-2019/JuFo-2019-Quantum-Computing"
 			/>
 			<Project
-				name="Jufo: Quantum Computer GUI"
+				name="Quantum Computer GUI"
 				icon="/projects/quantum.webp"
 				href="https://github.com/Quantum-Computing-Jufo-2019/quantum-computer-GUI"
 			/>
 			<Project
-				name="Jufo: Dwave Quantum Computer Animation"
+				name="Dwave Quantum Computer Animation"
 				icon="/projects/quantum.webp"
 				href="https://github.com/Quantum-Computing-Jufo-2019/dwave-quantum-computer-3d-animation"
 			/>
@@ -61,7 +61,7 @@
 				href="https://github.com/Quantum-Computing-Jufo-2019/quantum-computing-jufo-2019.github.io"
 			/>
 			<Project
-				name="Jufo: n Queens Chess App"
+				name="n Queens Chess App"
 				icon="https://raw.githubusercontent.com/Quantum-Computing-Jufo-2019/n-Queens-Android/master/src/nDamen_Schachfeld_Android/icon-144.png"
 				href="https://github.com/Quantum-Computing-Jufo-2019/n-Queens-Android"
 			/>
@@ -69,13 +69,18 @@
 		<ProjectsContainer title="Jugend Forscht Ameisen 2019">
 			<Project
 				name="Jufo: Ameisen 2019"
-				icon="/projects/jugend-forscht.webp"
+				icon="/projects/ants.webp"
 				href="https://github.com/jufo-ameisen-2019/Jufo-Ameisen-2019"
 			/>
 			<Project
-				name="Ameisen Demo"
-				icon="/projects/jugend-forscht.webp"
-				href="https://github.com/jufo-ameisen-2019/ameisen-demo"
+				name="Ameisen Simulator"
+				icon="/projects/ants.webp"
+				href="https://github.com/jufo-ameisen-2019/ameisen-simulator"
+			/>
+			<Project
+				name="Ameisen Deep Space Ars Electronica"
+				icon="/projects/ants.webp"
+				href="https://github.com/jufo-ameisen-2019/ameisen-deep-space-ars-electronica"
 			/>
 		</ProjectsContainer>
 		<ProjectsContainer title="Jugend Forscht 2016">
