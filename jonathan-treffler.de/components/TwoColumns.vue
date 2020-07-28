@@ -22,4 +22,7 @@ export default {
 	width :50%;
 	min-height: 100% !important;
 }
+@media (pointer:none), (pointer:coarse) {
+	flex-direction: column;
+}
 </style>
