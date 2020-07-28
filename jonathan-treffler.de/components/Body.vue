@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import MaterialCard from '~/components/MaterialCard.vue'
-import GithubContributions from '~/components/GithubContributions.vue'
-import Favorites from '~/components/Favorites.vue'
-import Projects from '~/components/Projects.vue'
+import MaterialCard from '~/components/MaterialCard.vue';
+import GithubContributions from '~/components/GithubContributions.vue';
+import Favorites from '~/components/Favorites.vue';
+import Projects from '~/components/Projects.vue';
 
 export default {
 	components: {
@@ -22,7 +22,7 @@ export default {
 		Favorites,
 		Projects,
 	},
-}
+};
 </script>
 
 <style>

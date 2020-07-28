@@ -7,13 +7,13 @@
 </template>
 
 <script>
-import MaterialCard from '~/components/MaterialCard.vue'
+import MaterialCard from '~/components/MaterialCard.vue';
 
 export default {
 	components: {
 		MaterialCard,
 	},
-}
+};
 </script>
 
 <style>

@@ -161,13 +161,13 @@
 </template>
 
 <script>
-import Project from '~/components/Project.vue'
-import ProjectsContainer from '~/components/ProjectsContainer.vue'
+import Project from '~/components/Project.vue';
+import ProjectsContainer from '~/components/ProjectsContainer.vue';
 
 export default {
 	components: {
 		Project,
 		ProjectsContainer,
 	},
-}
+};
 </script>

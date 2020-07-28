@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import MaterialCard from '~/components/MaterialCard.vue'
-import TwoColumns from '~/components/TwoColumns.vue'
-import TextWithIcon from '~/components/TextWithIcon.vue'
-import PropertiesContainer from '~/components/PropertiesContainer.vue'
+import MaterialCard from '~/components/MaterialCard.vue';
+import TwoColumns from '~/components/TwoColumns.vue';
+import TextWithIcon from '~/components/TextWithIcon.vue';
+import PropertiesContainer from '~/components/PropertiesContainer.vue';
 
 export default {
 	components: {
@@ -30,5 +30,5 @@ export default {
 		TextWithIcon,
 		PropertiesContainer,
 	},
-}
+};
 </script>

@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import MaterialCard from '~/components/MaterialCard.vue'
+import MaterialCard from '~/components/MaterialCard.vue';
 
 export default {
 	components: {
@@ -40,7 +40,7 @@ export default {
 			default: '100%',
 		},
 	},
-}
+};
 </script>
 
 <style>
