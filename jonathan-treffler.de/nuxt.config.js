@@ -23,6 +23,11 @@ export default {
 	modules: [
 		'@nuxtjs/pwa',
 	],
+	pwa: {
+		icon: {
+			iconSrc: 'assets/logo.png',
+		},
+	},
 	build: {
 	},
 };
