@@ -133,6 +133,11 @@
 		</ProjectsContainer>
 		<ProjectsContainer title="Quill">
 			<Project
+				name="Vuejs Quill"
+				icon="/projects/quill.webp"
+				href="https://github.com/TessyPowder/vuejs-quill"
+			/>
+			<Project
 				name="mathQuill Blot"
 				icon="/projects/quill.webp"
 				href="https://github.com/TessyPowder/Quill-mathQuill-blot"
@@ -160,6 +165,11 @@
 				name="Kdenlive VNC Docker"
 				icon="/projects/kdenlive.webp"
 				href="https://github.com/TessyPowder/kdenlive-vnc-docker"
+			/>
+			<Project
+				name="canvas2image Module Wrapper"
+				icon="/projects/github.webp"
+				href="https://github.com/TessyPowder/canvas2image-module-wrapper"
 			/>
 		</ProjectsContainer>
 	</div>
