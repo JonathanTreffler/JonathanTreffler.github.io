@@ -19,6 +19,7 @@ jobs:
       working-directory: jonathan-treffler.de/static
     
     - name: Commit files
+      continue-on-error: true
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "Github Actions"
@@ -26,6 +27,7 @@ jobs:
         git commit -m "Updated github Contributions Chart" -a
     
     - name: Push changes
+      continue-on-error: true
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
