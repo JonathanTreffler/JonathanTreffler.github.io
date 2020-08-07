@@ -167,9 +167,9 @@
 				href="https://github.com/JonathanTreffler/kdenlive-vnc-docker"
 			/>
 			<Project
-				name="canvas2image Module Wrapper"
+				name="canvas2image 2"
 				icon="/projects/github.webp"
-				href="https://github.com/JonathanTreffler/canvas2image-module-wrapper"
+				href="https://github.com/JonathanTreffler/canvas2image-2"
 			/>
 		</ProjectsContainer>
 	</div>
