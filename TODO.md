@@ -1,2 +1,0 @@
-- Mobile Optimisations
-- Link to FRACTAVA Website
