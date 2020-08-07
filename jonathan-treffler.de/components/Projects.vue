@@ -123,29 +123,29 @@
 			<Project
 				name="Home Assistant Remote CEC"
 				icon="https://www.home-assistant.io/images/home-assistant-logo.svg"
-				href="https://github.com/TessyPowder/Home-Assistant-remote-cec"
+				href="https://github.com/JonathanTreffler/Home-Assistant-remote-cec"
 			/>
 			<Project
 				name="HACS Websocket Service"
 				icon="https://www.home-assistant.io/images/home-assistant-logo.svg"
-				href="https://github.com/TessyPowder/hacs-websocket-service"
+				href="https://github.com/JonathanTreffler/hacs-websocket-service"
 			/>
 		</ProjectsContainer>
 		<ProjectsContainer title="Quill">
 			<Project
 				name="Vuejs Quill"
 				icon="/projects/quill.webp"
-				href="https://github.com/TessyPowder/vuejs-quill"
+				href="https://github.com/JonathanTreffler/vuejs-quill"
 			/>
 			<Project
 				name="mathQuill Blot"
 				icon="/projects/quill.webp"
-				href="https://github.com/TessyPowder/Quill-mathQuill-blot"
+				href="https://github.com/JonathanTreffler/Quill-mathQuill-blot"
 			/>
 			<Project
 				name="mathLive Blot"
 				icon="/projects/quill.webp"
-				href="https://github.com/TessyPowder/Quill-mathLive-blot"
+				href="https://github.com/JonathanTreffler/Quill-mathLive-blot"
 			/>
 		</ProjectsContainer>
 		<ProjectsContainer title="Miscellaneous">
@@ -159,17 +159,17 @@
 			<Project
 				name="wann-tritt-scheuer-zurück.de"
 				icon="/projects/scheuer.webp"
-				href="https://github.com/TessyPowder/Wann-tritt-Scheuer-zurueck"
+				href="https://github.com/JonathanTreffler/Wann-tritt-Scheuer-zurueck"
 			/>
 			<Project
 				name="Kdenlive VNC Docker"
 				icon="/projects/kdenlive.webp"
-				href="https://github.com/TessyPowder/kdenlive-vnc-docker"
+				href="https://github.com/JonathanTreffler/kdenlive-vnc-docker"
 			/>
 			<Project
 				name="canvas2image Module Wrapper"
 				icon="/projects/github.webp"
-				href="https://github.com/TessyPowder/canvas2image-module-wrapper"
+				href="https://github.com/JonathanTreffler/canvas2image-module-wrapper"
 			/>
 		</ProjectsContainer>
 	</div>
