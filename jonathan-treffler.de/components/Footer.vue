@@ -1,6 +1,6 @@
 <template>
 	<div class="footer">
-		<a href="https://jonathan-treffler.de"><img align="left" alt="jonathan-treffler.de" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" /></a>
+		<a href="https://github.com/JonathanTreffler"><img align="left" alt="Jonathan Treffler | Github" width="22px" src="/projects/github.webp" /></a>
 		<a href="https://twitter.com/TessyPowder"><img align="left" alt="Jonathan Treffler | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" /></a>
 		<a href="https://www.npmjs.com/~jonathan_treffler"><img align="left" alt="Jonathan Treffler | NPM" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/npm.svg" /></a>
 		<a href="https://dev.to/jonathantreffler"><img align="left" alt="Jonathan Treffler | DEV" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/dev-dot-to.svg" /></a>
