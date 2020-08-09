@@ -13,4 +13,7 @@
 	width: 100%;
 	justify-content: center;
 }
+.footer > a {
+	margin-right: 4px;
+}
 </style>
