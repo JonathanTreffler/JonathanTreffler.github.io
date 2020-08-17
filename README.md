@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/github/license/TessyPowder/TessyPowder.github.io)](https://github.com/TessyPowder/TessyPowder.github.io/blob/dev/LICENSE)
 ![Lint](https://github.com/TessyPowder/TessyPowder.github.io/workflows/Lint/badge.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/TessyPowder/TessyPowder.github.io)
+​[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JonathanTreffler/JonathanTreffler.github.io)](https://dependabot.com)
 
 # jonathan-treffler.de
 
