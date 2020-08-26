@@ -25,7 +25,12 @@ export default {
 	],
 	pwa: {
 		icon: {
-			iconSrc: 'assets/logo.png',
+			fileName: 'logo.png',
+		},
+		manifest: {
+			name: 'Jonathan Treffler',
+			lang: 'de',
+			background_color: '#fff',
 		},
 	},
 	build: {
