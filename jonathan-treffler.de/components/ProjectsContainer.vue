@@ -22,8 +22,9 @@ export default {
 
 <style>
 .projectsContainer {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(200px, 1fr) );
+    gap: 5px;
+    grid-auto-rows: 1fr;
 }
 </style>

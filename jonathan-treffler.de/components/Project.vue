@@ -1,5 +1,5 @@
 <template>
-	<a :href="href" style="text-decoration: none;">
+	<a :href="href" class="projectLink" style="text-decoration: none;">
 		<MaterialCard class="projectContainer">
 			<b class="projectName">
 				{{ name }}
@@ -44,12 +44,17 @@ export default {
 </script>
 
 <style>
+.projectLink {
+	height: 100%;
+	width: 100%;
+}
 .projectContainer {
-	width: fit-content;
-	height: fit-content;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
+	justify-content: center;
 }
 .iconContainer {
 	display: flex;
