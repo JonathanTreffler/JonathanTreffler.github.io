@@ -1,18 +1,18 @@
 <template>
-	<div class="header">
-		<MaterialCard>
-			<h1>Jonathan Treffler</h1>
-		</MaterialCard>
-	</div>
+  <div class="header">
+    <MaterialCard>
+      <h1>Jonathan Treffler</h1>
+    </MaterialCard>
+  </div>
 </template>
 
 <script>
-import MaterialCard from '~/components/MaterialCard.vue';
+import MaterialCard from "~/components/MaterialCard.vue";
 
 export default {
 	components: {
-		MaterialCard,
-	},
+		MaterialCard
+	}
 };
 </script>
 

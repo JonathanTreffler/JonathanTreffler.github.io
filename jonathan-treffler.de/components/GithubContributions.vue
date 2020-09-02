@@ -1,5 +1,5 @@
 <template>
-	<img class="githubContributions" src="githubContributions.svg"></img>
+  <img class="githubContributions" src="githubContributions.svg" />
 </template>
 
 <style>

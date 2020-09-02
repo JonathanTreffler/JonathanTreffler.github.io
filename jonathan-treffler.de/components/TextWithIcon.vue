@@ -1,10 +1,10 @@
 <template>
-	<div class="textWithIcon">
-		<p>
-			<i class="material-icons">{{ icon }}</i>
-			<span>{{ content }}</span>
-		</p>
-	</div>
+  <div class="textWithIcon">
+    <p>
+      <i class="material-icons">{{ icon }}</i>
+      <span>{{ content }}</span>
+    </p>
+  </div>
 </template>
 
 <script>
@@ -13,13 +13,13 @@ export default {
 	props: {
 		icon: {
 			type: String,
-			default: '',
+			default: ""
 		},
 		content: {
 			type: String,
-			default: '',
-		},
-	},
+			default: ""
+		}
+	}
 };
 </script>
 

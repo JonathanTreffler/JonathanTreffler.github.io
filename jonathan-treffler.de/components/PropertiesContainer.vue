@@ -1,14 +1,14 @@
 <template>
-	<div class="propertiesContainer">
-		<slot />
-	</div>
+  <div class="propertiesContainer">
+    <slot />
+  </div>
 </template>
 
 <script>
 
 export default {
 	components: {
-	},
+	}
 };
 </script>
 

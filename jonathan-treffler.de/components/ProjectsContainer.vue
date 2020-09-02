@@ -1,10 +1,10 @@
 <template>
-	<div style="padding-top: 10px;">
-		<p>{{ title }}</p>
-		<div class="projectsContainer">
-			<slot />
-		</div>
-	</div>
+  <div style="padding-top: 10px;">
+    <p>{{ title }}</p>
+    <div class="projectsContainer">
+      <slot />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -14,9 +14,9 @@ export default {
 	props: {
 		title: {
 			type: String,
-			default: '',
-		},
-	},
+			default: ""
+		}
+	}
 };
 </script>
 

@@ -1,13 +1,13 @@
 <template>
-	<div class="twoColumns">
-		<slot />
-	</div>
+  <div class="twoColumns">
+    <slot />
+  </div>
 </template>
 
 <script>
 export default {
 	components: {
-	},
+	}
 };
 </script>
 
