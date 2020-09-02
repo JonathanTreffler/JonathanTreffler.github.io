@@ -131,12 +131,7 @@
         href="https://github.com/JonathanTreffler/hacs-websocket-service"
       />
     </ProjectsContainer>
-    <ProjectsContainer title="Quill">
-      <Project
-        name="Vuejs Quill"
-        icon="/projects/quill.webp"
-        href="https://github.com/JonathanTreffler/vuejs-quill"
-      />
+    <ProjectsContainer title="Quill Blots">
       <Project
         name="mathQuill Blot"
         icon="/projects/quill.webp"
@@ -146,6 +141,18 @@
         name="mathLive Blot"
         icon="/projects/quill.webp"
         href="https://github.com/JonathanTreffler/Quill-mathLive-blot"
+      />
+    </ProjectsContainer>
+    <ProjectsContainer title="Vue">
+      <Project
+        name="Vue Gallery"
+        icon="/projects/github.webp"
+        href="https://github.com/JonathanTreffler/modern-vue-gallery"
+      />
+      <Project
+        name="Vuejs Quill"
+        icon="/projects/quill.webp"
+        href="https://github.com/JonathanTreffler/vuejs-quill"
       />
     </ProjectsContainer>
     <ProjectsContainer title="Miscellaneous">
@@ -170,6 +177,11 @@
         name="canvas2image 2"
         icon="/projects/github.webp"
         href="https://github.com/JonathanTreffler/canvas2image-2"
+      />
+      <Project
+        name="My Vue Eslintrc"
+        icon="/projects/github.webp"
+        href="https://github.com/JonathanTreffler/my-vue-eslintrc"
       />
     </ProjectsContainer>
   </div>
