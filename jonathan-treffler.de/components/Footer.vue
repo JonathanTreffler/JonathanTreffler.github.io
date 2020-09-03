@@ -1,11 +1,11 @@
 <template>
-  <div class="footer">
-    <a href="https://github.com/JonathanTreffler"><img align="left" alt="Jonathan Treffler | Github" src="/projects/github.webp"></a>
-    <a href="https://twitter.com/treffler_j"><img align="left" alt="Jonathan Treffler | Twitter" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg"></a>
-    <a href="https://www.npmjs.com/~jonathan_treffler"><img align="left" alt="Jonathan Treffler | NPM" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/npm.svg"></a>
-    <a href="https://dev.to/jonathantreffler"><img align="left" alt="Jonathan Treffler | DEV" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/dev-dot-to.svg"></a>
-    <a href="https://www.youtube.com/channel/UCeNkM_i1i9_Ver9njtxLAqw"><img align="left" alt="Jonathan Treffler | YouTube" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg"></a>
-  </div>
+	<div class="footer">
+		<a href="https://github.com/JonathanTreffler"><img align="left" alt="Jonathan Treffler | Github" src="/projects/github.webp"></a>
+		<a href="https://twitter.com/treffler_j"><img align="left" alt="Jonathan Treffler | Twitter" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg"></a>
+		<a href="https://www.npmjs.com/~jonathan_treffler"><img align="left" alt="Jonathan Treffler | NPM" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/npm.svg"></a>
+		<a href="https://dev.to/jonathantreffler"><img align="left" alt="Jonathan Treffler | DEV" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/dev-dot-to.svg"></a>
+		<a href="https://www.youtube.com/channel/UCeNkM_i1i9_Ver9njtxLAqw"><img align="left" alt="Jonathan Treffler | YouTube" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg"></a>
+	</div>
 </template>
 <style>
 .footer {

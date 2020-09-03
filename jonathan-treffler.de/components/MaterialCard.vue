@@ -1,13 +1,13 @@
 <template>
-  <div class="materialCard">
-    <slot />
-  </div>
+	<div class="materialCard">
+		<slot />
+	</div>
 </template>
 
 <script>
 export default {
 	components: {
-	}
+	},
 };
 </script>
 

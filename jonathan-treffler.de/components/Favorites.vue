@@ -1,20 +1,20 @@
 <template>
-  <TwoColumns>
-    <MaterialCard>
-      <PropertiesContainer>
-        <TextWithIcon icon="face" content="17 Years" />
-        <TextWithIcon icon="flag" content="Germany" />
-        <TextWithIcon icon="business" content="FRACTAVA" />
-      </PropertiesContainer>
-    </MaterialCard>
-    <MaterialCard>
-      <PropertiesContainer>
-        <TextWithIcon icon="favorite" content="Linux" />
-        <TextWithIcon icon="favorite" content="Nextcloud" />
-        <TextWithIcon icon="favorite" content="Webdevelopment" />
-      </PropertiesContainer>
-    </MaterialCard>
-  </TwoColumns>
+	<TwoColumns>
+		<MaterialCard>
+			<PropertiesContainer>
+				<TextWithIcon icon="face" content="17 Years" />
+				<TextWithIcon icon="flag" content="Germany" />
+				<TextWithIcon icon="business" content="FRACTAVA" />
+			</PropertiesContainer>
+		</MaterialCard>
+		<MaterialCard>
+			<PropertiesContainer>
+				<TextWithIcon icon="favorite" content="Linux" />
+				<TextWithIcon icon="favorite" content="Nextcloud" />
+				<TextWithIcon icon="favorite" content="Webdevelopment" />
+			</PropertiesContainer>
+		</MaterialCard>
+	</TwoColumns>
 </template>
 
 <script>
@@ -28,7 +28,7 @@ export default {
 		MaterialCard,
 		TwoColumns,
 		TextWithIcon,
-		PropertiesContainer
-	}
+		PropertiesContainer,
+	},
 };
 </script>

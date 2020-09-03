@@ -1,9 +1,9 @@
 <template>
-  <div id="container">
-    <Header />
-    <Body />
-    <Footer />
-  </div>
+	<div id="container">
+		<Header />
+		<Body />
+		<Footer />
+	</div>
 </template>
 
 <script>
@@ -15,8 +15,8 @@ export default {
 	components: {
 		Header,
 		Body,
-		Footer
-	}
+		Footer,
+	},
 };
 </script>
 

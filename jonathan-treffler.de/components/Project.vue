@@ -1,14 +1,14 @@
 <template>
-  <a :href="href" class="projectLink" style="text-decoration: none;">
-    <MaterialCard class="projectContainer">
-      <b class="projectName">
-        {{ name }}
-      </b>
-      <div class="iconContainer" :style="{'background-color': iconBackground,}">
-        <img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}">
-      </div>
-    </MaterialCard>
-  </a>
+	<a :href="href" class="projectLink" style="text-decoration: none;">
+		<MaterialCard class="projectContainer">
+			<b class="projectName">
+				{{ name }}
+			</b>
+			<div class="iconContainer" :style="{'background-color': iconBackground,}">
+				<img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}">
+			</div>
+		</MaterialCard>
+	</a>
 </template>
 
 <script>
@@ -16,30 +16,30 @@ import MaterialCard from "~/components/MaterialCard.vue";
 
 export default {
 	components: {
-		MaterialCard
+		MaterialCard,
 	},
 	props: {
 		name: {
 			type: String,
-			default: ""
+			default: "",
 		},
 		icon: {
 			type: String,
-			default: ""
+			default: "",
 		},
 		href: {
 			type: String,
-			default: ""
+			default: "",
 		},
 		iconBackground: {
 			type: String,
-			default: "white"
+			default: "white",
 		},
 		iconSize: {
 			type: String,
-			default: "100%"
-		}
-	}
+			default: "100%",
+		},
+	},
 };
 </script>
 

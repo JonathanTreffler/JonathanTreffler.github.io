@@ -1,12 +1,12 @@
 <template>
-  <div class="body">
-    <Favorites />
-    <MaterialCard>
-      <h2>Github Contributions:</h2>
-      <GithubContributions />
-    </MaterialCard>
-    <Projects />
-  </div>
+	<div class="body">
+		<Favorites />
+		<MaterialCard>
+			<h2>Github Contributions:</h2>
+			<GithubContributions />
+		</MaterialCard>
+		<Projects />
+	</div>
 </template>
 
 <script>
@@ -20,8 +20,8 @@ export default {
 		MaterialCard,
 		GithubContributions,
 		Favorites,
-		Projects
-	}
+		Projects,
+	},
 };
 </script>
 
