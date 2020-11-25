@@ -23,7 +23,7 @@ jobs:
       working-directory: jonathan-treffler.de
       
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@3.5.5
+      uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         BRANCH: master
         FOLDER: jonathan-treffler.de/dist/
