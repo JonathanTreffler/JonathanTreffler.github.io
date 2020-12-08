@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.2",
-    "nuxt": "^2.14.9"
+    "nuxt": "^2.14.10"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",
