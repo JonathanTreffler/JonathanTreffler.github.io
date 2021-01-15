@@ -1,0 +1,51 @@
+name: Screenshot
+
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      
+      - name: Set up git
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Github Actions"
+          git config pull.rebase false
+          git pull
+      
+      # Sleep to ensure the github pages deploy is done, by the time the screenshot gets captured.
+      - name: Sleep 30 Seconds
+        run: sleep 30s
+      
+      - name: Remove old Screenshot
+        continue-on-error: true
+        run: rm screenshot.png
+      
+      - name: Capture Screenshot
+        uses: JonathanTreffler/full-website-screenshot-action@v1.0
+        with:
+          url: https://jonathan-treffler.de/
+          destination: ./screenshot.png
+      
+      - name: Commit files
+        continue-on-error: true
+        run: |
+          ls -la
+          git pull
+          git add screenshot.png
+          git commit -m "Updated the Screenshot" -a
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: dev
