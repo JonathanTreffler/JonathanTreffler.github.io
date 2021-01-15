@@ -1,6 +1,7 @@
 [![License](https://img.shields.io/github/license/JonathanTreffler/JonathanTreffler.github.io)](https://github.com/JonathanTreffler/JonathanTreffler.github.io/blob/dev/LICENSE)
 ![Lint](https://github.com/JonathanTreffler/JonathanTreffler.github.io/workflows/Lint/badge.svg)
 ![Deploy to GitHub Pages](https://github.com/JonathanTreffler/JonathanTreffler.github.io/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
+![Pagespeed](https://github.com/JonathanTreffler/JonathanTreffler.github.io/workflows/Pagespeed/badge.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/JonathanTreffler/JonathanTreffler.github.io)
 ​[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=JonathanTreffler/JonathanTreffler.github.io)](https://dependabot.com)
 
