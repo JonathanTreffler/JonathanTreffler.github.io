@@ -1,5 +1,3 @@
-[![PageSpeed Desktop](https://img.shields.io/badge/PageSpeed%20Desktop-99%25-green)](https://developers.google.com/speed/pagespeed/insights/?hl=de&url=jonathan-treffler.de&tab=desktop)
-[![PageSpeed Mobile](https://img.shields.io/badge/PageSpeed%20Mobile-89%25-green)](https://developers.google.com/speed/pagespeed/insights/?hl=de&url=jonathan-treffler.de)
 [![License](https://img.shields.io/github/license/JonathanTreffler/JonathanTreffler.github.io)](https://github.com/JonathanTreffler/JonathanTreffler.github.io/blob/dev/LICENSE)
 ![Lint](https://github.com/JonathanTreffler/JonathanTreffler.github.io/workflows/Lint/badge.svg)
 ![Deploy to GitHub Pages](https://github.com/JonathanTreffler/JonathanTreffler.github.io/workflows/Deploy%20to%20GitHub%20Pages/badge.svg)
@@ -8,6 +6,10 @@
 
 # jonathan-treffler.de
 
+### Pagespeed
+<a href="https://developers.google.com/speed/pagespeed/insights/?url=jonathan-treffler.de&tab=desktop" rel="noopener noreferrer" target="_blank"><img src="https://raw.githubusercontent.com/JonathanTreffler/JonathanTreffler.github.io/dev/pagespeed.svg"></a>
+
+### Screenshot
 ![](https://raw.githubusercontent.com/JonathanTreffler/JonathanTreffler.github.io/dev/img/jonathan-treffler.de.png)
 
 ## Build Setup
