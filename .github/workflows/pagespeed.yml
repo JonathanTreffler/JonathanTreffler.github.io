@@ -1,0 +1,29 @@
+name: Pagespeed
+on:
+  schedule: [{cron: "0 */6 * * *"}]
+  push: {branches: "master"}
+  workflow_dispatch:
+
+jobs:
+  pagespeed:
+    runs-on: ubuntu-latest
+    steps:
+      # Sleep to ensure the github pages deploy is done, by the time the pagespeed gets measured.
+      - name: Sleep 30 seconds
+        run: sleep 30s
+      
+      - uses: lowlighter/metrics@master
+        with:
+          use_prebuilt_image: master
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+
+          # Options
+          template: classic
+          filename: pagespeed.svg
+          base: ""
+          config_timezone: Europe/Berlin
+          plugin_pagespeed: yes
+          plugin_pagespeed_detailed: yes
+          plugin_pagespeed_url: https://jonathan-treffler.de/
