@@ -31,6 +31,7 @@ export default {
 			name: "Jonathan Treffler",
 			lang: "de",
 			background_color: "#fff",
+			theme_color: "#fff",
 		},
 	},
 	build: {
