@@ -5,7 +5,7 @@
 				{{ name }}
 			</b>
 			<div class="iconContainer" :style="{'background-color': iconBackground,}">
-				<img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}">
+				<img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}" :alt="name + ' Logo'">
 			</div>
 		</MaterialCard>
 	</a>
