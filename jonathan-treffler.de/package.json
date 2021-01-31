@@ -1,5 +1,6 @@
 {
   "name": "jonathan-treffler.de",
+	"description": "The personal website of Jonathan Treffler. Here you can find links to all my projects and some information about me.",
   "version": "1.0.0",
   "private": true,
   "scripts": {
