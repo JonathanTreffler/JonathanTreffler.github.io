@@ -1,5 +1,5 @@
 <template>
-	<a :href="href" class="projectLink" style="text-decoration: none;">
+	<a class="projectLink" style="text-decoration: none;" @click="open">
 		<MaterialCard class="projectContainer">
 			<b class="projectName">
 				{{ name }}
@@ -39,6 +39,44 @@ export default {
 			type: String,
 			default: "100%",
 		},
+		githubPath: {
+			type: String,
+			default: "",
+		},
+	},
+	data() {
+		return {
+			stargazers_count: undefined,
+		};
+	},
+	async fetch() {
+		if(this.githubPath != "") {
+			const apiURL = "https://api.github.com/repos/" + this.githubPath;
+
+			let githubAPIResponse = await this.$axios.$get(apiURL, {
+				auth: {
+					username: "JonathanTreffler",
+					password: this.$config.githubToken,
+				},
+			});
+
+			console.log(githubAPIResponse);
+
+			this.stargazers_count = githubAPIResponse.stargazers_count;
+			this.size = githubAPIResponse.size;
+		}
+	},
+	fetchOnServer: true,
+	methods: {
+		open() {
+			this.$swal({
+				title: this.name,
+				imageUrl: this.icon,
+				html:
+					"<i class='fas fa-star'></i> " + this.stargazers_count + " Stars <br>"+
+					"<i class='fas fa-file-code'></i> " + this.size + " Bytes <br>",
+			});
+		},
 	},
 };
 </script>
@@ -64,10 +102,10 @@ export default {
 	align-self: center;
 }
 .projectLogo {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  object-fit: contain;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	object-fit: contain;
 }
 .projectName {
 	text-align: center;
