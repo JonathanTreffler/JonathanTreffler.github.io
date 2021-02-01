@@ -1,6 +1,8 @@
 
 export default {
 	mode: "universal",
+	target: 'static',
+
 	head: {
 		title: process.env.npm_package_name || "",
 		meta: [
@@ -13,16 +15,27 @@ export default {
 			{ rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons", },
 		],
 	},
+
 	css: [
+		"@sweetalert2/theme-material-ui/material-ui.css",
+		"@fortawesome/fontawesome-free/css/fontawesome.min.css",
+		"@fortawesome/fontawesome-free/css/solid.min.css",
 	],
+
 	plugins: [
 	],
+
 	buildModules: [
 		"@nuxtjs/eslint-module",
+		//"@nuxtjs/fontawesome",
 	],
+
 	modules: [
 		"@nuxtjs/pwa",
+		"@nuxtjs/axios",
+		"vue-sweetalert2/nuxt",
 	],
+
 	pwa: {
 		icon: {
 			fileName: "logo.png",
@@ -34,6 +47,18 @@ export default {
 			theme_color: "#fff",
 		},
 	},
+
 	build: {
 	},
+
+	privateRuntimeConfig: {
+    	githubToken: process.env.githubToken,
+	},
+
+	/*fontawesome: {
+    	icons: {
+			solid: ['faStar',],
+		},
+		addCss: true,
+	}*/
 };
