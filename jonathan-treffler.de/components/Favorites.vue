@@ -2,7 +2,7 @@
 	<TwoColumns>
 		<MaterialCard>
 			<PropertiesContainer>
-				<TextWithIcon icon="face" content="18 Years" />
+				<TextWithIcon icon="grin" content="18 Years" />
 				<TextWithIcon icon="flag" content="Germany" />
 				<TextWithIcon icon="business" content="FRACTAVA" />
 			</PropertiesContainer>

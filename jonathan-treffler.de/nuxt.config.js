@@ -12,7 +12,6 @@ export default {
 		],
 		link: [
 			{ rel: "icon", type: "image/jpeg", href: "/favicon.jpeg", },
-			{ rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons", },
 		],
 	},
 
@@ -53,8 +52,13 @@ export default {
 
 	fontawesome: {
     	icons: {
-			solid: ['faStar', "faFileCode", "faFileContract"],
+			regular: [
+				'faStar',
+				"faFileCode",
+				"faFileContract",
+				"faGrin",
+				"faFlag",
+			],
 		},
-		addCss: true,
 	}
 };

@@ -1,7 +1,7 @@
 <template>
 	<div class="textWithIcon">
 		<p>
-			<i class="material-icons">{{ icon }}</i>
+			<font-awesome-icon :icon="icon" />
 			<span>{{ content }}</span>
 		</p>
 	</div>
@@ -31,7 +31,7 @@ export default {
 .textWithIcon p>* {
 	vertical-align: middle;
 }
-.textWithIcon i, .textWithIcon span {
+.textWithIcon {
 	font-size: 4vh !important;
 }
 </style>

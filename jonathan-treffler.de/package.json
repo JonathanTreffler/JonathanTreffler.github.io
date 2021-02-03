@@ -15,6 +15,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-regular-svg-icons": "^5.15.2",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/fontawesome": "^1.1.2",
