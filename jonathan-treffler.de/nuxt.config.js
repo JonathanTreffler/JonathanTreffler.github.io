@@ -1,7 +1,7 @@
 
 export default {
 	mode: "universal",
-	target: 'static',
+	target: "static",
 
 	head: {
 		title: process.env.npm_package_name || "",
@@ -16,24 +16,20 @@ export default {
 		],
 	},
 
-	css: [
-		"@sweetalert2/theme-material-ui/material-ui.css",
-		"@fortawesome/fontawesome-free/css/fontawesome.min.css",
-		"@fortawesome/fontawesome-free/css/solid.min.css",
-	],
+	css: [],
 
 	plugins: [
+		"~/plugins/vue-material.js",
 	],
 
 	buildModules: [
 		"@nuxtjs/eslint-module",
-		//"@nuxtjs/fontawesome",
+		"@nuxtjs/fontawesome",
 	],
 
 	modules: [
 		"@nuxtjs/pwa",
 		"@nuxtjs/axios",
-		"vue-sweetalert2/nuxt",
 	],
 
 	pwa: {
@@ -52,13 +48,13 @@ export default {
 	},
 
 	privateRuntimeConfig: {
-    	githubToken: process.env.githubToken,
+		githubToken: process.env.GITHUB_TOKEN,
 	},
 
-	/*fontawesome: {
+	fontawesome: {
     	icons: {
-			solid: ['faStar',],
+			solid: ['faStar', "faFileCode", "faFileContract"],
 		},
 		addCss: true,
-	}*/
+	}
 };
