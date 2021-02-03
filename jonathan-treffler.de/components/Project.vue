@@ -10,7 +10,11 @@
 		</MaterialCard>
 
 		<md-dialog :md-active.sync="opened">
-			<md-dialog-title>{{ name }}</md-dialog-title>
+			<md-dialog-title>
+				<img class="projectLogo" :src="icon" :alt="name + ' Logo'">
+				<br>
+				<p style="text-align: center;">{{ name }}</p>
+			</md-dialog-title>
 			<div class="dialogContainer">
 				<div class="chipsContainer">
 					<md-chip class="md-accent" v-if="stargazers_count" md-clickable>
