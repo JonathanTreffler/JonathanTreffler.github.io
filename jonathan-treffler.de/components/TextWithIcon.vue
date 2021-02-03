@@ -27,6 +27,7 @@ export default {
 .textWithIcon {
 	vertical-align: middle;
 	width: 100%;
+	margin-bottom: 4px;
 }
 .textWithIcon p>* {
 	vertical-align: middle;

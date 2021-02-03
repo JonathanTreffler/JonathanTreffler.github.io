@@ -4,14 +4,14 @@
 			<PropertiesContainer>
 				<TextWithIcon icon="grin" content="18 Years" />
 				<TextWithIcon icon="flag" content="Germany" />
-				<TextWithIcon icon="business" content="FRACTAVA" />
+				<TextWithIcon icon="building" content="FRACTAVA" />
 			</PropertiesContainer>
 		</MaterialCard>
 		<MaterialCard>
 			<PropertiesContainer>
-				<TextWithIcon icon="favorite" content="Linux" />
-				<TextWithIcon icon="favorite" content="Nextcloud" />
-				<TextWithIcon icon="favorite" content="Webdevelopment" />
+				<TextWithIcon icon="heart" content="Linux" />
+				<TextWithIcon icon="heart" content="Nextcloud" />
+				<TextWithIcon icon="heart" content="Webdevelopment" />
 			</PropertiesContainer>
 		</MaterialCard>
 	</TwoColumns>

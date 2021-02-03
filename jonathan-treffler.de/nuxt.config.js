@@ -52,12 +52,15 @@ export default {
 
 	fontawesome: {
     	icons: {
-			regular: [
+			solid: [
 				'faStar',
 				"faFileCode",
 				"faFileContract",
 				"faGrin",
 				"faFlag",
+				"faBuilding",
+				"faHeart",
+				"faHashtag",
 			],
 		},
 	}

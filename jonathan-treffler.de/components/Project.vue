@@ -30,6 +30,12 @@
 						<span>{{ license.spdx_id }}</span>
 					</md-chip>
 				</div>
+				<div class="dialogContainer">
+					<md-chip class="md-accent" v-for="topic of topics" v-bind:key="'topic' + topic" md-clickable>
+						<md-icon><font-awesome-icon icon="star" /></md-icon>
+						<span>{{ topic }}</span>
+					</md-chip>
+				</div>
 				<br>
 				<p>{{ description }}</p>
 			</div>
@@ -79,26 +85,37 @@ export default {
 			size: undefined,
 			description: undefined,
 			license: undefined,
+			topics: [],
 			opened: false,
 		};
 	},
 	async fetch() {
 		if(this.githubPath != "") {
-			const apiURL = "https://api.github.com/repos/" + this.githubPath;
+			const repositoryAPIURL = "https://api.github.com/repos/" + this.githubPath;
+			const auth = {
+				username: "JonathanTreffler",
+				password: this.$config.githubToken,
+			};
 
-			let githubAPIResponse = await this.$axios.$get(apiURL, {
-				auth: {
-					username: "JonathanTreffler",
-					password: this.$config.githubToken,
+			let repositoryAPIResponse = await this.$axios.$get(repositoryAPIURL, {auth, });
+
+			console.log(repositoryAPIResponse);
+
+			this.stargazers_count = repositoryAPIResponse.stargazers_count;
+			this.size = repositoryAPIResponse.size;
+			this.description = repositoryAPIResponse.description;
+			this.license = repositoryAPIResponse.license;
+
+			const topicsAPIURL = "https://api.github.com/repos/" + this.githubPath + "/topics";
+
+			let topicsAPIResponse = await this.$axios.$get(topicsAPIURL, {
+				auth,
+				headers: {
+					"Accept": "application/vnd.github.mercy-preview+json",
 				},
 			});
 
-			console.log(githubAPIResponse);
-
-			this.stargazers_count = githubAPIResponse.stargazers_count;
-			this.size = githubAPIResponse.size;
-			this.description = githubAPIResponse.description;
-			this.license = githubAPIResponse.license;
+			this.topics = topicsAPIResponse.names;
 		}
 	},
 	fetchOnServer: true,
@@ -157,5 +174,9 @@ export default {
 
 .chipsContainer, .md-chip span {
 	user-select: none;
+}
+
+.md-dialog-container {
+	border-radius: 10px;
 }
 </style>
