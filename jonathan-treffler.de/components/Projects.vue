@@ -193,7 +193,7 @@
 				name="wann-tritt-scheuer-zurück.de"
 				icon="/projects/scheuer.webp"
 				href="https://github.com/JonathanTreffler/Wann-tritt-Scheuer-zurueck"
-				github-path=""
+				github-path="JonathanTreffler/Wann-tritt-Scheuer-zurueck"
 			/>
 			<Project
 				name="Kdenlive VNC Docker"
