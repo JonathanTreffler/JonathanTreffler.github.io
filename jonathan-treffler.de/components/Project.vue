@@ -11,8 +11,8 @@
 
 		<md-dialog :md-active.sync="opened">
 			<md-dialog-title>{{ name }}</md-dialog-title>
-			<div class="dialog_container">
-				<div style="width: fit-content; margin: auto;">
+			<div class="dialogContainer">
+				<div class="chipsContainer">
 					<md-chip class="md-accent" v-if="stargazers_count" md-clickable>
 						<md-icon><font-awesome-icon icon="star" /></md-icon>
 						<span>{{ stargazers_count }} Stars</span>
@@ -133,7 +133,7 @@ export default {
 	text-align: center;
 }
 
-.dialog_container {
+.dialogContainer {
 	padding: 0 1.8em;
 }
 
@@ -145,7 +145,13 @@ export default {
     width: 18px;
 	vertical-align: middle;
 }
-.md-chip span {
+
+.chipsContainer {
+	width: fit-content;
+	margin: auto;
+}
+
+.chipsContainer, .md-chip span {
 	user-select: none;
 }
 </style>
