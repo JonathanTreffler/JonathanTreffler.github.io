@@ -1,5 +1,5 @@
 <template>
-	<a class="projectLink" style="text-decoration: none;" @click="open">
+	<a class="projectLink" style="text-decoration: none;" @click="opened = true;">
 		<MaterialCard class="projectContainer">
 			<b class="projectName">
 				{{ name }}
@@ -8,6 +8,31 @@
 				<img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}" :alt="name + ' Logo'">
 			</div>
 		</MaterialCard>
+
+		<md-dialog :md-active.sync="opened">
+			<md-dialog-title>{{ name }}</md-dialog-title>
+			<div class="dialog_container">
+				<div style="width: fit-content; margin: auto;">
+					<md-chip class="md-accent" v-if="stargazers_count" md-clickable>
+						<md-icon><font-awesome-icon icon="star" /></md-icon>
+						<span>{{ stargazers_count }} Stars</span>
+					</md-chip>
+					<md-chip class="md-accent" v-if="size" md-clickable>
+						<md-icon><font-awesome-icon icon="file-code" /></md-icon>
+						<span>{{ size }} Bytes</span>
+					</md-chip>
+					<md-chip class="md-accent" v-if="license" md-clickable>
+						<md-icon><font-awesome-icon icon="file-contract" /></md-icon>
+						<span>{{ license.spdx_id }}</span>
+					</md-chip>
+				</div>
+				<br>
+				<p>{{ description }}</p>
+			</div>
+			<md-dialog-actions>
+				<md-button class="md-primary" @click="opened = false">Close</md-button>
+			</md-dialog-actions>
+		</md-dialog>
 	</a>
 </template>
 
@@ -47,6 +72,10 @@ export default {
 	data() {
 		return {
 			stargazers_count: undefined,
+			size: undefined,
+			description: undefined,
+			license: undefined,
+			opened: false,
 		};
 	},
 	async fetch() {
@@ -64,19 +93,12 @@ export default {
 
 			this.stargazers_count = githubAPIResponse.stargazers_count;
 			this.size = githubAPIResponse.size;
+			this.description = githubAPIResponse.description;
+			this.license = githubAPIResponse.license;
 		}
 	},
 	fetchOnServer: true,
 	methods: {
-		open() {
-			this.$swal({
-				title: this.name,
-				imageUrl: this.icon,
-				html:
-					"<i class='fas fa-star'></i> " + this.stargazers_count + " Stars <br>"+
-					"<i class='fas fa-file-code'></i> " + this.size + " Bytes <br>",
-			});
-		},
 	},
 };
 </script>
@@ -109,5 +131,21 @@ export default {
 }
 .projectName {
 	text-align: center;
+}
+
+.dialog_container {
+	padding: 0 1.8em;
+}
+
+.md-chip .md-icon {
+	font-size: 18px !important;
+    min-height: 18px;
+    min-width: 18px;
+    height: 18px;
+    width: 18px;
+	vertical-align: middle;
+}
+.md-chip span {
+	user-select: none;
 }
 </style>
