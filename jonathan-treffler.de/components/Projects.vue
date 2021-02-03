@@ -11,7 +11,7 @@
 				name="Notes Desktop"
 				icon="/projects/Notes.webp"
 				href="https://github.com/fractava/notes-desktop"
-				github-path=""
+				github-path="fractava/notes-desktop"
 			/>
 			<Project
 				name="fractava.com"
