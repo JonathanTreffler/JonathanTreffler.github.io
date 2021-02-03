@@ -1,8 +1,6 @@
 <template>
-	<md-ripple>
-		<div class="materialCard">
-			<slot />
-		</div>
+	<md-ripple class="materialCard">
+		<slot />
 	</md-ripple>
 </template>
 
