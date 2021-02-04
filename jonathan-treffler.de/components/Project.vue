@@ -30,14 +30,16 @@
 						<span>{{ license.spdx_id }}</span>
 					</md-chip>
 				</div>
-				<div class="dialogContainer">
+				<br>
+				<div class="chipsContainer">
 					<md-chip class="md-accent" v-for="topic of topics" v-bind:key="'topic' + topic" md-clickable>
 						<md-icon><font-awesome-icon icon="star" /></md-icon>
 						<span>{{ topic }}</span>
 					</md-chip>
 				</div>
 				<br>
-				<p>{{ description }}</p>
+				<p v-if="description">{{ description }}</p>
+				<a :href="href">Open</a>
 			</div>
 			<md-dialog-actions>
 				<md-button class="md-primary" @click="opened = false">Close</md-button>
@@ -91,6 +93,8 @@ export default {
 	},
 	async fetch() {
 		if(this.githubPath != "") {
+			console.log("Fetching Github API for information about ", this.githubPath);
+
 			const repositoryAPIURL = "https://api.github.com/repos/" + this.githubPath;
 			const auth = {
 				username: "JonathanTreffler",
@@ -99,7 +103,7 @@ export default {
 
 			let repositoryAPIResponse = await this.$axios.$get(repositoryAPIURL, {auth, });
 
-			console.log(repositoryAPIResponse);
+			//console.log(repositoryAPIResponse);
 
 			this.stargazers_count = repositoryAPIResponse.stargazers_count;
 			this.size = repositoryAPIResponse.size;
@@ -158,6 +162,10 @@ export default {
 	padding: 0 1.8em;
 }
 
+.md-chip {
+	margin-bottom: 5px !important;
+}
+
 .md-chip .md-icon {
 	font-size: 18px !important;
     min-height: 18px;
@@ -178,5 +186,21 @@ export default {
 
 .md-dialog-container {
 	border-radius: 10px;
+}
+
+@media not (max-width: 600px) {
+	.md-dialog-container {
+		max-width: 60%;
+	}
+
+}
+
+@media (max-width: 600px) {
+	.md-dialog-fullscreen .chipsContainer {
+		display: flex;
+		overflow-x: scroll;
+		width: 100%;
+		height: fit-content;
+	}
 }
 </style>
