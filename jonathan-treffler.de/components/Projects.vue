@@ -86,8 +86,8 @@
 			<Project
 				name="Ameisen Simulator"
 				icon="/projects/ants.webp"
-				href="https://github.com/jufo-ameisen-2019/ameisen-simulator"
-				github-path="jufo-ameisen-2019/ameisen-simulator"
+				href="https://github.com/jufo-ameisen-2019/ants-simulator"
+				github-path="jufo-ameisen-2019/ants-simulator"
 			/>
 			<Project
 				name="Ameisen Deep Space Ars Electronica"
