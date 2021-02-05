@@ -1,6 +1,6 @@
 <template>
-	<a class="projectLink" style="text-decoration: none;" @click="opened = true;">
-		<MaterialCard class="projectContainer">
+	<div class="projectContainer" @click="opened = true;">
+		<MaterialCard class="projectCard">
 			<b class="projectName">
 				{{ name }}
 			</b>
@@ -51,7 +51,7 @@
 				<md-button class="md-primary" @click="opened = false">Close</md-button>
 			</md-dialog-actions>
 		</md-dialog>
-	</a>
+	</div>
 </template>
 
 <script>
@@ -140,6 +140,8 @@ export default {
 
 			this.topics = topicsAPIResponse.names;
 		} else if(this.gitlabPath) {
+			console.log("Fetching Gitlab API for information about ", this.gitlabPath);
+
 			const repositoryAPIURL = "https://gitlab.com/api/v4/projects/" + this.gitlabPath.replace("/", "%2F");
 
 			let repositoryAPIResponse = await this.$axios.$get(repositoryAPIURL);
@@ -164,11 +166,11 @@ export default {
 </script>
 
 <style>
-.projectLink {
+.projectContainer {
 	height: 100%;
 	width: 100%;
 }
-.projectContainer {
+.projectCard {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -223,9 +225,9 @@ export default {
 	border-radius: 10px;
 }
 
-@media not (max-width: 600px) {
+@media (min-width: 600px) {
 	.md-dialog-container {
-		max-width: 60%;
+		max-width: 50%;
 	}
 
 }
