@@ -1,6 +1,8 @@
 
 export default {
 	mode: "universal",
+	target: "static",
+
 	head: {
 		title: process.env.npm_package_name || "",
 		meta: [
@@ -10,19 +12,25 @@ export default {
 		],
 		link: [
 			{ rel: "icon", type: "image/jpeg", href: "/favicon.jpeg", },
-			{ rel: "stylesheet", href: "https://fonts.googleapis.com/icon?family=Material+Icons", },
 		],
 	},
-	css: [
-	],
+
+	css: [],
+
 	plugins: [
+		"~/plugins/vue-material.js",
 	],
+
 	buildModules: [
 		"@nuxtjs/eslint-module",
+		"@nuxtjs/fontawesome",
 	],
+
 	modules: [
 		"@nuxtjs/pwa",
+		"@nuxtjs/axios",
 	],
+
 	pwa: {
 		icon: {
 			fileName: "logo.png",
@@ -34,6 +42,27 @@ export default {
 			theme_color: "#fff",
 		},
 	},
+
 	build: {
+	},
+
+	privateRuntimeConfig: {
+		githubToken: process.env.GITHUB_TOKEN || process.env["secrets.GITHUB_TOKEN"],
+	},
+
+	fontawesome: {
+		icons: {
+			solid: [
+				"faStar",
+				"faFileCode",
+				"faFileContract",
+				"faGrin",
+				"faFlag",
+				"faBuilding",
+				"faHeart",
+				"faHashtag",
+				"faLink",
+			],
+		},
 	},
 };

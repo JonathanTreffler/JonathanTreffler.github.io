@@ -1,7 +1,7 @@
 <template>
 	<div class="header">
 		<MaterialCard>
-			<h1>Jonathan Treffler</h1>
+			<h1 style="font-size: 2.5em;">Jonathan Treffler</h1>
 		</MaterialCard>
 	</div>
 </template>
