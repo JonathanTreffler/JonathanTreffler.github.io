@@ -11,8 +11,9 @@
 
 		<md-dialog :md-active.sync="opened">
 			<md-dialog-title>
-				<img class="projectLogo" :src="icon" :alt="name + ' Logo'">
-				<br>
+				<div class="projectLogo" :style="{'background-color': iconBackground,}" style="width: fit-content;">
+					<img :src="icon" :alt="name + ' Logo'" style="height: 150px;">
+				</div>				<br>
 				<p style="text-align: center;">{{ name }}</p>
 			</md-dialog-title>
 			<div class="dialogContainer">
