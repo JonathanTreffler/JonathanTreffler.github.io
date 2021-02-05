@@ -140,6 +140,14 @@ export default {
 
 			this.topics = topicsAPIResponse.names;
 		} else if(this.gitlabPath) {
+			const repositoryAPIURL = "https://gitlab.com/api/v4/projects/" + this.gitlabPath.replace("/", "%2F");
+
+			let repositoryAPIResponse = await this.$axios.$get(repositoryAPIURL);
+
+			this.stargazers_count = repositoryAPIResponse.star_count;
+			this.description = repositoryAPIResponse.description;
+			this.topics = repositoryAPIResponse.tag_list;
+
 			this.links.push({
 				name: "Gitlab",
 				href: "https://gitlab.com/" + this.gitlabPath,
