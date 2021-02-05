@@ -15,20 +15,21 @@ jobs:
         fetch-depth: 0
     
     - name: Download
-      run: curl https://ghchart.rshah.org/JonathanTreffler > githubContributions.svg
+      run: curl https://ghchart.rshah.org/JonathanTreffler
+      # > githubContributions.svg
       working-directory: jonathan-treffler.de/static
     
-    - name: Commit files
-      continue-on-error: true
-      run: |
-        git config --local user.email "actions@github.com"
-        git config --local user.name "Github Actions"
-        git add -A
-        git commit -m "Updated github Contributions Chart" -a
+    #- name: Commit files
+    #  continue-on-error: true
+    #  run: |
+    #    git config --local user.email "actions@github.com"
+    #    git config --local user.name "Github Actions"
+    #    git add -A
+    #    git commit -m "Updated github Contributions Chart" -a
     
-    - name: Push changes
-      continue-on-error: true
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: dev
+    #- name: Push changes
+    #  continue-on-error: true
+    #  uses: ad-m/github-push-action@master
+    #  with:
+    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    #    branch: dev
