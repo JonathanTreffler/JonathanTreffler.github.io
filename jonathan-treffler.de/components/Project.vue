@@ -37,9 +37,15 @@
 						<span>{{ topic }}</span>
 					</md-chip>
 				</div>
-				<br>
+				<br v-if="Array.isArray(topics) && topics.length">
+				<div class="chipsContainer">
+					<md-chip class="md-accent" v-for="link of links" v-bind:key="link + link.href" md-clickable @click="openLink(link)">
+						<md-icon><font-awesome-icon icon="link" /></md-icon>
+						<span>{{ link.name }}</span>
+					</md-chip>
+				</div>
+				<br v-if="Array.isArray(links) && links.length">
 				<p v-if="description">{{ description }}</p>
-				<a :href="href">Open</a>
 			</div>
 			<md-dialog-actions>
 				<md-button class="md-primary" @click="opened = false">Close</md-button>
@@ -64,10 +70,6 @@ export default {
 			type: String,
 			default: "",
 		},
-		href: {
-			type: String,
-			default: "",
-		},
 		iconBackground: {
 			type: String,
 			default: "white",
@@ -80,6 +82,10 @@ export default {
 			type: String,
 			default: "",
 		},
+		gitlabPath: {
+			type: String,
+			default: "",
+		},
 	},
 	data() {
 		return {
@@ -89,6 +95,7 @@ export default {
 			license: undefined,
 			topics: [],
 			opened: false,
+			links: [],
 		};
 	},
 	async fetch() {
@@ -110,6 +117,18 @@ export default {
 			this.description = repositoryAPIResponse.description;
 			this.license = repositoryAPIResponse.license;
 
+			if(repositoryAPIResponse.homepage) {
+				this.links.push({
+					name: "Website",
+					href: repositoryAPIResponse.homepage,
+				});
+			}
+
+			this.links.push({
+				name: "Github",
+				href: "https://github.com/" + this.githubPath,
+			});
+
 			const topicsAPIURL = "https://api.github.com/repos/" + this.githubPath + "/topics";
 
 			let topicsAPIResponse = await this.$axios.$get(topicsAPIURL, {
@@ -120,10 +139,18 @@ export default {
 			});
 
 			this.topics = topicsAPIResponse.names;
+		} else if(this.gitlabPath) {
+			this.links.push({
+				name: "Gitlab",
+				href: "https://gitlab.com/" + this.gitlabPath,
+			});
 		}
 	},
 	fetchOnServer: true,
 	methods: {
+		openLink(link) {
+			window.open(link.href, "_blank");
+		},
 	},
 };
 </script>

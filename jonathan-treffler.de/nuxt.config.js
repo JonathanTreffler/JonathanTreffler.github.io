@@ -51,9 +51,9 @@ export default {
 	},
 
 	fontawesome: {
-    	icons: {
+		icons: {
 			solid: [
-				'faStar',
+				"faStar",
 				"faFileCode",
 				"faFileContract",
 				"faGrin",
@@ -61,7 +61,8 @@ export default {
 				"faBuilding",
 				"faHeart",
 				"faHashtag",
+				"faLink",
 			],
 		},
-	}
+	},
 };
