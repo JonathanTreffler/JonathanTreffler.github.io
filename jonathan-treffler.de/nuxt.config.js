@@ -47,7 +47,7 @@ export default {
 	},
 
 	privateRuntimeConfig: {
-		githubToken: process.env.GITHUB_TOKEN,
+		githubToken: process.env.GITHUB_TOKEN || process.env["secrets.GITHUB_TOKEN"],
 	},
 
 	fontawesome: {
