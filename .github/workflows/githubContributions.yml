@@ -19,16 +19,17 @@ jobs:
       run: curl https://ghchart.rshah.org/JonathanTreffler > githubContributions.svg
       working-directory: jonathan-treffler.de/static
     
-    - uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-        architecture: 'x64'
+    #- uses: actions/setup-python@v2
+    #  with:
+    #    python-version: '3.x'
+    #    architecture: 'x64'
         
-    - name: Install svgcheck
-      run: pip install svgcheck
+    #- name: Install svgcheck
+    #  run: pip install svgcheck
 
     - name: Verify Contributions SVG
-      run: svgcheck -v githubContributions.svg
+      #run: svgcheck -v githubContributions.svg
+      run: xmllint githubContributions.svg
       working-directory: jonathan-treffler.de/static
       
     #- name: Commit files
