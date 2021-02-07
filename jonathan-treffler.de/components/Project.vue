@@ -171,6 +171,7 @@ export default {
 	height: 100%;
 	width: 100%;
 }
+
 .projectCard {
 	width: 100%;
 	height: 100%;
@@ -179,6 +180,7 @@ export default {
 	flex-wrap: nowrap;
 	justify-content: center;
 }
+
 .iconContainer {
 	display: flex;
 	height: 8vh;
@@ -186,12 +188,14 @@ export default {
 	align-items: center;
 	align-self: center;
 }
+
 .projectLogo {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	object-fit: contain;
 }
+
 .projectName {
 	text-align: center;
 }
@@ -206,10 +210,10 @@ export default {
 
 .md-chip .md-icon {
 	font-size: 18px !important;
-    min-height: 18px;
-    min-width: 18px;
-    height: 18px;
-    width: 18px;
+	min-height: 18px;
+	min-width: 18px;
+	height: 18px;
+	width: 18px;
 	vertical-align: middle;
 }
 
@@ -230,7 +234,6 @@ export default {
 	.md-dialog-container {
 		max-width: 50%;
 	}
-
 }
 
 @media (max-width: 600px) {

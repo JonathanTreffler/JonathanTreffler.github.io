@@ -27,6 +27,6 @@ export default {
 	background-color: #F8F8F8;
 	padding: 10px;
 	padding-bottom: 10vh;
-	font-family:Roboto, sans-serif;
+	font-family: Roboto, sans-serif;
 }
 </style>
