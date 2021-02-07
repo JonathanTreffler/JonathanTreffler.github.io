@@ -23,7 +23,7 @@ export default {
 
 	buildModules: [
 		"@nuxtjs/eslint-module",
-		'@nuxtjs/stylelint-module',
+		"@nuxtjs/stylelint-module",
 		"@nuxtjs/fontawesome",
 	],
 
@@ -69,5 +69,5 @@ export default {
 
 	stylelint: {
 		configFile: ".stylelintrc.js",
-	}
+	},
 };
