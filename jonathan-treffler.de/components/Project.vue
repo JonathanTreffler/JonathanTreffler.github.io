@@ -6,8 +6,10 @@
 					{{ name }}
 				</b>
 			</template>
-			<div class="iconContainer" :style="{'background-color': iconBackground,}">
-				<img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}" :alt="name + ' Logo'">
+			<div class="iconContainer">
+				<div class="iconBackground" :style="{'background-color': iconBackground,}">
+					<img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}" :alt="name + ' Logo'">
+				</div>
 			</div>
 		</MaterialCard>
 
@@ -186,9 +188,17 @@ export default {
 .iconContainer {
 	display: flex;
 	height: 8vh;
-	width: 8vh;
+	width: 100%;
 	align-items: center;
 	align-self: center;
+}
+
+.iconBackground {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 8vh;
+	width: 8vh;
 }
 
 .projectLogo {

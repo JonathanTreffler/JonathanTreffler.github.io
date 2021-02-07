@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { MdApp, MdIcon, MdChips, MdButton, MdDialog, MdList, MdRipple, MdCard } from "vue-material/dist/components";
+import { MdApp, MdIcon, MdChips, MdButton, MdDialog, MdList, MdRipple, MdCard, MdContent } from "vue-material/dist/components";
 import "vue-material/dist/vue-material.min.css";
 
 Vue.use(MdApp);
@@ -10,3 +10,4 @@ Vue.use(MdDialog);
 Vue.use(MdList);
 Vue.use(MdRipple);
 Vue.use(MdCard);
+Vue.use(MdContent);

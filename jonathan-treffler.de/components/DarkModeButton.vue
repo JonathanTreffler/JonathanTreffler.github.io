@@ -1,19 +1,15 @@
 <template>
 	<div class="darkModeButtonContainer" @click="switchTheme">
-		<MaterialCard>
+		<md-ripple>
 			<font-awesome-icon icon="sun" class="darkModeButtonIcon fa-3x" :class="{'show': !darkMode, 'hide': darkMode}" />
 			<font-awesome-icon icon="moon" class="darkModeButtonIcon fa-3x" :class="{'show': darkMode, 'hide': !darkMode}" />
-		</MaterialCard >
+		</md-ripple>
 	</div>
 </template>
 
 <script>
-import MaterialCard from "~/components/MaterialCard.vue";
 
 export default {
-	components: {
-		MaterialCard,
-	},
 	props: {
 		theme: {
 			type: String,
@@ -41,16 +37,14 @@ export default {
 	position: absolute;
 	top: 10px;
 	right: 20px;
-	width: fit-content;
-	height: fit-content;
+	width: 3em;
+	height: 3em;
 }
 
 .darkModeButtonIcon {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 30px;
-	height: 30px;
 }
 
 .show {

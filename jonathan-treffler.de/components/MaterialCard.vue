@@ -25,28 +25,38 @@ export default {
 </script>
 
 <style>
-
-.md-app-content .md-card {
-	margin-right: 0;
-	margin-left: 0;
-}
-
 .materialCard {
 	box-shadow: none;
 	color: #424242;
 	/* transition: all 0.3s ease-out 0s;
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.1); */
-	/* padding-bottom: 16px;
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-top: 16px; */
-	border-radius: 10px;
 	/* background-color: white; */
-	margin: 4px;
+	margin: 4px !important;
+}
+
+.materialCard, .materialCard .md-ripple {
+	border-radius: 10px;
 }
 
 .md-card.md-theme-default-dark {
 	background-color: #252F3F;
 }
+
+.md-card.md-theme-default {
+	color: #424242;
+}
+
+.materialCard .md-card-header {
+	text-align: center;
+}
+
+.materialCard .md-card-header:empty, .materialCard .md-card-content:empty {
+	padding-bottom: 0;
+}
+
+.materialCard.md-card-content:last-of-type {
+	padding-bottom: 16px;
+}
+
 </style>

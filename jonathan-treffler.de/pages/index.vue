@@ -35,19 +35,22 @@ export default {
 	overflow: initial;
 }
 
+.md-app-content {
+	padding: 10px;
+}
+
 #container {
 	width: 100%;
 	min-height: 100vh;
-	padding: 10px;
 	padding-bottom: 10vh;
 	font-family: Roboto, sans-serif;
 }
 
-#container.md-theme-default {
-	background-color: #F8F8F8;
+.md-content.md-theme-default, #container.md-theme-default {
+	background-color: #F8F8F8 !important;
 }
 
-#container.md-theme-default-dark {
-	background-color: #161E2E;
+.md-content.md-theme-default-dark, #container.md-theme-default-dark {
+	background-color: #161E2E !important;
 }
 </style>
