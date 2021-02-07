@@ -1,9 +1,11 @@
 <template>
 	<div class="projectContainer" @click="opened = true;">
-		<MaterialCard class="projectCard">
-			<b class="projectName">
-				{{ name }}
-			</b>
+		<MaterialCard :hover="true" class="projectCard">
+			<template v-slot:header>
+				<b class="projectName">
+					{{ name }}
+				</b>
+			</template>
 			<div class="iconContainer" :style="{'background-color': iconBackground,}">
 				<img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}" :alt="name + ' Logo'">
 			</div>
@@ -73,7 +75,7 @@ export default {
 		},
 		iconBackground: {
 			type: String,
-			default: "white",
+			default: "transparent",
 		},
 		iconSize: {
 			type: String,
