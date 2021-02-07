@@ -68,6 +68,9 @@ export default {
 				"faSun",
 				"faMoon",
 			],
+			brands: [
+				"faGithub",
+			]
 		},
 	},
 
