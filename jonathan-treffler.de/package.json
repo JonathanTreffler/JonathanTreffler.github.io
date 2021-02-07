@@ -9,9 +9,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "eslint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-	"eslint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-	"stylelint": "stylelint .",
-	"stylelint:fix": "stylelint . --fix"
+    "eslint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "stylelint": "stylelint '**/*.vue'",
+    "stylelint:fix": "stylelint '**/*.vue' --fix"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
@@ -21,7 +21,9 @@
     "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/stylelint-module": "^4.0.0",
     "nuxt": "^2.14.12",
+    "stylelint-config-jonathantreffler": "^1.0.0",
     "vue-material": "^1.0.0-beta-15"
   },
   "devDependencies": {
@@ -30,6 +32,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.19.0",
     "eslint-config-jonathantreffler": "^1.5.1",
-    "eslint-plugin-nuxt": "^2.0.0"
+    "eslint-plugin-nuxt": "^2.0.0",
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
