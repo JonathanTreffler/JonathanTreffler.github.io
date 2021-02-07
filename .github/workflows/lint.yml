@@ -19,6 +19,11 @@ jobs:
     - name: Install dependencies
       working-directory: jonathan-treffler.de
       run: npm ci
-    - name: Lint
+
+    - name: Lint JavaScript
       working-directory: jonathan-treffler.de
-      run: npm run lint
+      run: npm run eslint
+
+    - name: Lint CSS
+      working-directory: jonathan-treffler.de
+      run: npm run stylelint
