@@ -28,11 +28,10 @@ export default {
 	vertical-align: middle;
 	width: 100%;
 	margin-bottom: 4px;
-}
-.textWithIcon p>* {
-	vertical-align: middle;
-}
-.textWithIcon {
 	font-size: 4vh !important;
+}
+
+.textWithIcon p > * {
+	vertical-align: middle;
 }
 </style>

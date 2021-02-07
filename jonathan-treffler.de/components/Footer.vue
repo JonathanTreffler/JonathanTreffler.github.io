@@ -14,11 +14,13 @@
 	justify-content: center;
 	margin-top: 4%;
 }
+
 .footer > a {
 	margin-right: 4px;
 	width: 5%;
 	min-width: 25px;
 }
+
 .footer > a > img {
 	width: 100%;
 	height: auto;

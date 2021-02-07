@@ -22,6 +22,7 @@ export default {
 	margin: auto;
 	height: fit-content;
 }
+
 h1 {
 	text-align: center;
 }

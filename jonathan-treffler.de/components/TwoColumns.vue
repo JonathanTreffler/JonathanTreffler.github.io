@@ -18,15 +18,17 @@ export default {
 	flex-wrap: nowrap;
 	height: fit-content;
 }
-.twoColumns>* {
+
+.twoColumns > * {
 	width: 50%;
 	min-height: 100% !important;
 }
-@media (pointer:none), (pointer:coarse) {
+
+@media (pointer: none), (pointer: coarse) {
 	.twoColumns {
 		flex-direction: column;
 	}
-	.twoColumns>* {
+	.twoColumns > * {
 		width: 100%;
 	}
 }

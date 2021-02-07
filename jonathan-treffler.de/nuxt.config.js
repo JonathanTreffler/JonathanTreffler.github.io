@@ -23,6 +23,7 @@ export default {
 
 	buildModules: [
 		"@nuxtjs/eslint-module",
+		"@nuxtjs/stylelint-module",
 		"@nuxtjs/fontawesome",
 	],
 
@@ -64,5 +65,9 @@ export default {
 				"faLink",
 			],
 		},
+	},
+
+	stylelint: {
+		configFile: ".stylelintrc.js",
 	},
 };
