@@ -28,7 +28,7 @@ jobs:
     #  run: pip install svgcheck
     
     - name: Install xmllint
-      run: apt install libxml2-utils
+      run: sudo apt install libxml2-utils
 
     - name: Verify Contributions SVG
       #run: svgcheck -v githubContributions.svg
