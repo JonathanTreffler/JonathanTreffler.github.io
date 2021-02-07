@@ -3,6 +3,7 @@ name: Github Contributions Chart Download
 on:
   schedule:
     - cron:  '0 */2 * * *'
+  workflow_dispatch:
 
 jobs:
   download:
@@ -14,11 +15,22 @@ jobs:
         persist-credentials: false
         fetch-depth: 0
     
-    - name: Download
-      run: curl https://ghchart.rshah.org/JonathanTreffler
-      # > githubContributions.svg
+    - name: Download Contributions SVG
+      run: curl https://ghchart.rshah.org/JonathanTreffler > githubContributions.svg
       working-directory: jonathan-treffler.de/static
     
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        architecture: 'x64'
+        
+    - name: Install svgcheck
+      run: pip install svgcheck
+
+    - name: Verify Contributions SVG
+      run: svgcheck -v githubContributions.svg
+      working-directory: jonathan-treffler.de/static
+      
     #- name: Commit files
     #  continue-on-error: true
     #  run: |
