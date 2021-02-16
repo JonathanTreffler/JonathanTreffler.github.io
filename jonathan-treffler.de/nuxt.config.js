@@ -74,7 +74,7 @@ export default {
 				"faNpm",
 				"faDev",
 				"faYoutube",
-			]
+			],
 		},
 	},
 
