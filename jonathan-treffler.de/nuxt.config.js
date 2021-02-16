@@ -15,7 +15,9 @@ export default {
 		],
 	},
 
-	css: [],
+	css: [
+		"~/assets/styles/themes.scss",
+	],
 
 	plugins: [
 		"~/plugins/vue-material.js",
@@ -63,6 +65,15 @@ export default {
 				"faHeart",
 				"faHashtag",
 				"faLink",
+				"faSun",
+				"faMoon",
+			],
+			brands: [
+				"faGithub",
+				"faTwitter",
+				"faNpm",
+				"faDev",
+				"faYoutube",
 			],
 		},
 	},

@@ -1,10 +1,20 @@
 <template>
 	<div class="footer">
-		<a href="https://github.com/JonathanTreffler"><img align="left" alt="Jonathan Treffler | Github" src="/projects/github.webp" width="120" height="120"></a>
-		<a href="https://twitter.com/treffler_j"><img align="left" alt="Jonathan Treffler | Twitter" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg"></a>
-		<a href="https://www.npmjs.com/~jonathan_treffler"><img align="left" alt="Jonathan Treffler | NPM" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/npm.svg"></a>
-		<a href="https://dev.to/jonathantreffler"><img align="left" alt="Jonathan Treffler | DEV" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/dev-dot-to.svg"></a>
-		<a href="https://www.youtube.com/channel/UCeNkM_i1i9_Ver9njtxLAqw"><img align="left" alt="Jonathan Treffler | YouTube" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg"></a>
+		<a href="https://github.com/JonathanTreffler" target="_blank">
+			<font-awesome-icon :icon="['fab', 'github']" size="3x" alt="Jonathan Treffler | Github" />
+		</a>
+		<a href="https://twitter.com/treffler_j" target="_blank">
+			<font-awesome-icon :icon="['fab', 'twitter']" size="3x" alt="Jonathan Treffler | Twitter" />
+		</a>
+		<a href="https://www.npmjs.com/~jonathan_treffler" target="_blank">
+			<font-awesome-icon :icon="['fab', 'npm']" size="3x" alt="Jonathan Treffler | NPM" />
+		</a>
+		<a href="https://dev.to/jonathantreffler" target="_blank">
+			<font-awesome-icon :icon="['fab', 'dev']" size="3x" alt="Jonathan Treffler | DEV" />
+		</a>
+		<a href="https://www.youtube.com/channel/UCeNkM_i1i9_Ver9njtxLAqw" target="_blank">
+			<font-awesome-icon :icon="['fab', 'youtube']" size="3x" alt="Jonathan Treffler | YouTube" />
+		</a>
 	</div>
 </template>
 <style>
@@ -16,13 +26,14 @@
 }
 
 .footer > a {
-	margin-right: 4px;
-	width: 5%;
-	min-width: 25px;
+	margin-right: 6px;
 }
 
-.footer > a > img {
-	width: 100%;
-	height: auto;
+.md-app.md-theme-default-dark .footer > a > svg {
+	color: white;
+}
+
+.md-app.md-theme-default .footer > a > svg {
+	color: black;
 }
 </style>

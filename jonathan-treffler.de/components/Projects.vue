@@ -109,13 +109,13 @@
 			<Project
 				name="King of Planets"
 				icon="https://raw.githubusercontent.com/fractava/King-of-Planets/master/King_of_Planets/data/Planet2.png"
-				style="image-rendering: pixelated;"
+				:image-pixelated="true"
 				github-path="fractava/King-of-Planets"
 			/>
 			<Project
 				name="King of Planets Server"
 				icon="https://raw.githubusercontent.com/fractava/King-of-Planets/master/King_of_Planets/data/Planet2.png"
-				style="image-rendering: pixelated;"
+				:image-pixelated="true"
 				github-path="fractava/King-of-Planets-Server"
 			/>
 		</ProjectsContainer>

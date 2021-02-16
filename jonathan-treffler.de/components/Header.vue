@@ -1,7 +1,9 @@
 <template>
 	<div class="header">
 		<MaterialCard>
-			<h1 style="font-size: 2.5em;">Jonathan Treffler</h1>
+			<template v-slot:header>
+				<h1 style="font-size: 2.5em;">Jonathan Treffler</h1>
+			</template>
 		</MaterialCard>
 	</div>
 </template>

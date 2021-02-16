@@ -1,19 +1,24 @@
 <template>
 	<div class="projectContainer" @click="opened = true;">
-		<MaterialCard class="projectCard">
-			<b class="projectName">
-				{{ name }}
-			</b>
-			<div class="iconContainer" :style="{'background-color': iconBackground,}">
-				<img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}" :alt="name + ' Logo'">
+		<MaterialCard :hover="true" class="projectCard">
+			<template v-slot:header>
+				<b class="projectName">
+					{{ name }}
+				</b>
+			</template>
+			<div class="iconContainer">
+				<div class="iconBackground" :style="{'background-color': iconBackground,}">
+					<img class="projectLogo" :class="{pixelatedRendering: imagePixelated}" :src="icon" :style="{width: iconSize, height: iconSize,}" :alt="name + ' Logo'">
+				</div>
 			</div>
 		</MaterialCard>
 
 		<md-dialog :md-active.sync="opened">
 			<md-dialog-title>
-				<div class="projectLogo" :style="{'background-color': iconBackground,}" style="width: fit-content;">
-					<img :src="icon" :alt="name + ' Logo'" style="height: 150px;">
-				</div>				<br>
+				<div class="projectLogo" style="display: grid; justify-content: center;">
+					<img :src="icon" :alt="name + ' Logo'" style="height: 150px;" :class="{pixelatedRendering: imagePixelated}" :style="{'background-color': iconBackground,}">
+				</div>
+				<br>
 				<p style="text-align: center;">{{ name }}</p>
 			</md-dialog-title>
 			<div class="dialogContainer">
@@ -73,11 +78,15 @@ export default {
 		},
 		iconBackground: {
 			type: String,
-			default: "white",
+			default: "transparent",
 		},
 		iconSize: {
 			type: String,
 			default: "100%",
+		},
+		imagePixelated: {
+			type: Boolean,
+			default: false,
 		},
 		githubPath: {
 			type: String,
@@ -184,9 +193,17 @@ export default {
 .iconContainer {
 	display: flex;
 	height: 8vh;
-	width: 8vh;
+	width: 100%;
 	align-items: center;
 	align-self: center;
+}
+
+.iconBackground {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 8vh;
+	width: 8vh;
 }
 
 .projectLogo {
@@ -194,6 +211,11 @@ export default {
 	margin-right: auto;
 	display: block;
 	object-fit: contain;
+}
+
+.pixelatedRendering {
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
 }
 
 .projectName {
