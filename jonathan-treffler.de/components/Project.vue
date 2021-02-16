@@ -8,16 +8,17 @@
 			</template>
 			<div class="iconContainer">
 				<div class="iconBackground" :style="{'background-color': iconBackground,}">
-					<img class="projectLogo" :src="icon" :style="{width: iconSize, height: iconSize,}" :alt="name + ' Logo'">
+					<img class="projectLogo" :class="{pixelatedRendering: imagePixelated}" :src="icon" :style="{width: iconSize, height: iconSize,}" :alt="name + ' Logo'">
 				</div>
 			</div>
 		</MaterialCard>
 
 		<md-dialog :md-active.sync="opened">
 			<md-dialog-title>
-				<div class="projectLogo" :style="{'background-color': iconBackground,}" style="width: fit-content;">
-					<img :src="icon" :alt="name + ' Logo'" style="height: 150px;">
-				</div>				<br>
+				<div class="projectLogo" style="display: grid; justify-content: center;">
+					<img :src="icon" :alt="name + ' Logo'" style="height: 150px;" :class="{pixelatedRendering: imagePixelated}" :style="{'background-color': iconBackground,}">
+				</div>
+				<br>
 				<p style="text-align: center;">{{ name }}</p>
 			</md-dialog-title>
 			<div class="dialogContainer">
@@ -51,6 +52,7 @@
 				</div>
 				<br v-if="Array.isArray(links) && links.length">
 				<p v-if="description">{{ description }}</p>
+				{{ imagePixelated }}
 			</div>
 			<md-dialog-actions>
 				<md-button class="md-primary" @click="opened = false">Close</md-button>
@@ -82,6 +84,10 @@ export default {
 		iconSize: {
 			type: String,
 			default: "100%",
+		},
+		imagePixelated: {
+			type: Boolean,
+			default: false,
 		},
 		githubPath: {
 			type: String,
@@ -206,6 +212,11 @@ export default {
 	margin-right: auto;
 	display: block;
 	object-fit: contain;
+}
+
+.pixelatedRendering {
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
 }
 
 .projectName {
