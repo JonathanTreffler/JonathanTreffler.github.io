@@ -1,18 +1,18 @@
 <template>
 	<div class="footer">
-		<a href="https://github.com/JonathanTreffler">
+		<a href="https://github.com/JonathanTreffler" target="_blank">
 			<font-awesome-icon :icon="['fab', 'github']" size="3x" alt="Jonathan Treffler | Github" />
 		</a>
-		<a href="https://twitter.com/treffler_j">
+		<a href="https://twitter.com/treffler_j" target="_blank">
 			<font-awesome-icon :icon="['fab', 'twitter']" size="3x" alt="Jonathan Treffler | Twitter" />
 		</a>
-		<a href="https://www.npmjs.com/~jonathan_treffler">
+		<a href="https://www.npmjs.com/~jonathan_treffler" target="_blank">
 			<font-awesome-icon :icon="['fab', 'npm']" size="3x" alt="Jonathan Treffler | NPM" />
 		</a>
-		<a href="https://dev.to/jonathantreffler">
+		<a href="https://dev.to/jonathantreffler" target="_blank">
 			<font-awesome-icon :icon="['fab', 'dev']" size="3x" alt="Jonathan Treffler | DEV" />
 		</a>
-		<a href="https://www.youtube.com/channel/UCeNkM_i1i9_Ver9njtxLAqw">
+		<a href="https://www.youtube.com/channel/UCeNkM_i1i9_Ver9njtxLAqw" target="_blank">
 			<font-awesome-icon :icon="['fab', 'youtube']" size="3x" alt="Jonathan Treffler | YouTube" />
 		</a>
 	</div>
