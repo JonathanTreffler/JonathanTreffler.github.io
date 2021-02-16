@@ -24,7 +24,7 @@ export default {
 	},
 	data: function() {
 		return {
-			theme: "default",
+			theme: "default-dark",
 		};
 	},
 };

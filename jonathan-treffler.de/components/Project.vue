@@ -52,7 +52,6 @@
 				</div>
 				<br v-if="Array.isArray(links) && links.length">
 				<p v-if="description">{{ description }}</p>
-				{{ imagePixelated }}
 			</div>
 			<md-dialog-actions>
 				<md-button class="md-primary" @click="opened = false">Close</md-button>
