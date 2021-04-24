@@ -7,6 +7,10 @@
 
 # jonathan-treffler.de
 
+### IPFS
+Don't like the centralised web?
+No problem, this page is available on IPFS: [ipfs.jonathan-treffler.de](https://ipfs.jonathan-treffler.de/)
+
 ### Pagespeed
 <a href="https://developers.google.com/speed/pagespeed/insights/?url=jonathan-treffler.de&tab=desktop" rel="noopener noreferrer" target="_blank"><img src="https://raw.githubusercontent.com/JonathanTreffler/JonathanTreffler.github.io/dev/pagespeed.svg"></a>
 
