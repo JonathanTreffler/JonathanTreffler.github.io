@@ -1,0 +1,20 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/jonathan-treffler.de"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  assignees:
+  - JonathanTreffler
+  ignore:
+  - dependency-name: eslint
+    versions:
+    - 7.24.0
+  - dependency-name: stylelint
+    versions:
+    - 13.11.0
+  - dependency-name: nuxt
+    versions:
+    - 2.15.1
