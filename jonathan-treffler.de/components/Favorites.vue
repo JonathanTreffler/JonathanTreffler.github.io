@@ -4,7 +4,7 @@
 			<PropertiesContainer>
 				<TextWithIcon icon="grin" content="18 Years" />
 				<TextWithIcon icon="flag" content="Germany" />
-				<TextWithIcon icon="building" content="FRACTAVA" />
+				<TextWithIcon icon="building" content="Verdigado" />
 			</PropertiesContainer>
 		</MaterialCard>
 		<MaterialCard>
