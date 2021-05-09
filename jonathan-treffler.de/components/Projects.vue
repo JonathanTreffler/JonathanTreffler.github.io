@@ -22,23 +22,6 @@
 				gitlab-path="fractava/biblio"
 			/>
 		</ProjectsContainer>
-		<ProjectsContainer title="School Squirrel">
-			<Project
-				name="School Squirrel"
-				icon="/projects/schoolSquirrel.webp"
-				github-path="SchoolSquirrel/SchoolSquirrel"
-			/>
-			<Project
-				name="School Squirrel Fcm Relay"
-				icon="/projects/schoolSquirrel.webp"
-				github-path="SchoolSquirrel/SquirrelFcmRelay"
-			/>
-			<Project
-				name="School Squirrel Chat"
-				icon="/projects/schoolSquirrel.webp"
-				github-path="SchoolSquirrel/SquirrelChatUI"
-			/>
-		</ProjectsContainer>
 		<ProjectsContainer title="Jugend Forscht Quantum 2019">
 			<Project
 				name="Jufo: Quantum Computing"
@@ -103,6 +86,23 @@
 				name="Chickomat Arduino Software"
 				icon="https://raw.githubusercontent.com/chickomat/Chickomat/master/Bilder/icon.png"
 				github-path="chickomat/arduino-control-software"
+			/>
+		</ProjectsContainer>
+		<ProjectsContainer title="School Squirrel">
+			<Project
+				name="School Squirrel"
+				icon="/projects/schoolSquirrel.webp"
+				github-path="SchoolSquirrel/SchoolSquirrel"
+			/>
+			<Project
+				name="School Squirrel Fcm Relay"
+				icon="/projects/schoolSquirrel.webp"
+				github-path="SchoolSquirrel/SquirrelFcmRelay"
+			/>
+			<Project
+				name="School Squirrel Chat"
+				icon="/projects/schoolSquirrel.webp"
+				github-path="SchoolSquirrel/SquirrelChatUI"
 			/>
 		</ProjectsContainer>
 		<ProjectsContainer title="King of Planets">
