@@ -59,7 +59,7 @@ export default {
 						type: "PullRequestOpened",
 						repo: activity.repo.name,
 						id: activity.payload.number,
-						icon: "mdi-plus",
+						icon: "mdi-source-pull",
 						message,
 					});
 				} else if(activity.payload.action == "closed") {
@@ -69,7 +69,7 @@ export default {
 						type: "PullRequestClosed",
 						repo: activity.repo.name,
 						id: activity.payload.number,
-						icon: "mdi-close",
+						icon: "mdi-source-merge",
 						message,
 					});
 				} else {
@@ -109,7 +109,7 @@ export default {
 					this.events.push({
 						type: "BranchCreated",
 						repo: activity.repo.name,
-						icon: "mdi-plus",
+						icon: "mdi-source-branch",
 						message,
 					});
 				} else {
@@ -126,7 +126,7 @@ export default {
 						type: "IssueOpened",
 						repo: activity.repo.name,
 						id: activity.payload.issue.number,
-						icon: "mdi-plus",
+						icon: "mdi-alert-circle-outline",
 						message,
 					});
 				} else if(activity.payload.action == "closed") {
@@ -136,7 +136,7 @@ export default {
 						type: "IssueClosed",
 						repo: activity.repo.name,
 						id: activity.payload.issue.number,
-						icon: "mdi-close",
+						icon: "mdi-check",
 						message,
 					});
 				} else {
@@ -150,7 +150,7 @@ export default {
 				this.events.push({
 					type: "RepositoryForked",
 					repo: activity.repo.name,
-					icon: "mdi-directions-fork",
+					icon: "mdi-source-fork",
 					message,
 				});
 			}
@@ -172,7 +172,7 @@ export default {
 						type: "CommitsPushed",
 						repo: activity.repo.name,
 						number: commitCount,
-						icon: "mdi-plus",
+						icon: "mdi-source-commit",
 						message,
 					});
 				}
