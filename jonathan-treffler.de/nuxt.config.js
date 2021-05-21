@@ -27,6 +27,16 @@ export default {
 		"@nuxtjs/eslint-module",
 		"@nuxtjs/stylelint-module",
 		"@nuxtjs/fontawesome",
+		["@nuxtjs/vuetify",{
+			/*theme: {
+				themes: {
+					light: {
+						primary: 'blue',
+						accent: 'red',
+					},
+				},
+			}*/
+		}],
 	],
 
 	modules: [
