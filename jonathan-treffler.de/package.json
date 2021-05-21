@@ -23,7 +23,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "fibers": "^5.0.0",
-    "nuxt": "^2.15.4",
+    "nuxt": "^2.15.6",
     "sass": "^1.33.0",
     "stylelint-config-jonathantreffler": "^1.1.0",
     "stylelint-scss": "^3.18.0",
