@@ -4,16 +4,25 @@
 
 		<md-dialog :md-active.sync="opened">
 			<md-dialog-title>Aktivität</md-dialog-title>
-			<div class="dialogContainer">
+			<div class="activityDialogContainer">
 				<v-app>
-					<v-theme-provider dark>
-						<v-timeline dense>
-							<v-timeline-item right :icon="'mdi-star'" fill-dot color="#252F3F" icon-color="white">timeline item</v-timeline-item>
-							<v-timeline-item right icon-color="white">timeline item</v-timeline-item>
-						</v-timeline>
-					</v-theme-provider>
+					<v-timeline dense>
+						<v-timeline-item
+							right
+							:icon="event.icon"
+							fill-dot color="#252F3F"
+							icon-color="white"
+							v-for="(event, index) in events"
+							:key="'event-' + index"
+						>
+							{{ event.message }}
+						</v-timeline-item>
+					</v-timeline>
 				</v-app>
 			</div>
+			<md-dialog-actions>
+				<md-button class="md-primary" @click="opened = false">Close</md-button>
+			</md-dialog-actions>
 		</md-dialog>
 	</div>
 </template>
@@ -44,20 +53,24 @@ export default {
 
 			if(activity.type == "PullRequestEvent") {
 				if(activity.payload.action == "opened") {
-					//console.log("Pull Request #", activity.payload.number, " of ", activity.repo.name, "opened");
+					const message = "Pull Request #" + activity.payload.number + " of " + activity.repo.name + " opened";
 
 					this.events.push({
 						type: "PullRequestOpened",
 						repo: activity.repo.name,
 						id: activity.payload.number,
+						icon: "mdi-plus",
+						message,
 					});
 				} else if(activity.payload.action == "closed") {
-					//console.log("Pull Request #", activity.payload.number, "of", activity.repo.name, "closed");
+					const message = "Pull Request #" + activity.payload.number + " of " + activity.repo.name + " closed";
 
 					this.events.push({
 						type: "PullRequestClosed",
 						repo: activity.repo.name,
 						id: activity.payload.number,
+						icon: "mdi-close",
+						message,
 					});
 				} else {
 					console.log(activity);
@@ -66,12 +79,14 @@ export default {
 
 			if(activity.type == "IssueCommentEvent") {
 				if(activity.payload.action == "created") {
-					//console.log("Commented on #", activity.payload.issue.number, "of", activity.repo.name);
+					const message = "Commented on #" + activity.payload.issue.number + " of " + activity.repo.name;
 
 					this.events.push({
 						type: "Commented",
 						repo: activity.repo.name,
 						id: activity.payload.issue.number,
+						icon: "mdi-comment",
+						message,
 					});
 				} else {
 					console.log(activity);
@@ -80,18 +95,22 @@ export default {
 
 			if(activity.type == "CreateEvent") {
 				if(activity.payload.ref_type == "repository") {
-					//console.log("Created ", activity.repo.name);
+					const message = "Created Repository " + activity.repo.name;
 
 					this.events.push({
 						type: "RepositoryCreated",
 						repo: activity.repo.name,
+						icon: "mdi-plus",
+						message,
 					});
 				} else if(activity.payload.ref_type == "branch") {
-					//console.log("Created branch in ", activity.repo.name);
+					const message = "Created branch in " + activity.repo.name;
 
 					this.events.push({
 						type: "BranchCreated",
 						repo: activity.repo.name,
+						icon: "mdi-plus",
+						message,
 					});
 				} else {
 					console.log(activity);
@@ -101,20 +120,24 @@ export default {
 
 			if(activity.type == "IssuesEvent") {
 				if(activity.payload.action == "opened") {
-					//console.log("Issue #", activity.payload.issue.number, "of", activity.repo.name, "opened");
+					const message = "Issue #" + activity.payload.issue.number + " of " + activity.repo.name + " opened";
 
 					this.events.push({
 						type: "IssueOpened",
 						repo: activity.repo.name,
 						id: activity.payload.issue.number,
+						icon: "mdi-plus",
+						message,
 					});
 				} else if(activity.payload.action == "closed") {
-					//console.log("Issue #", activity.payload.issue.number, "of", activity.repo.name, "closed");
+					const message = "Issue #" + activity.payload.issue.number + " of " + activity.repo.name + " closed";
 
 					this.events.push({
 						type: "IssueClosed",
 						repo: activity.repo.name,
 						id: activity.payload.issue.number,
+						icon: "mdi-close",
+						message,
 					});
 				} else {
 					console.log(activity);
@@ -122,11 +145,13 @@ export default {
 			}
 
 			if(activity.type == "ForkEvent") {
-				//console.log("Forked", activity.repo.name);
+				const message = "Forked " + activity.repo.name;
 
 				this.events.push({
 					type: "RepositoryForked",
 					repo: activity.repo.name,
+					icon: "mdi-directions-fork",
+					message,
 				});
 			}
 
@@ -135,12 +160,20 @@ export default {
 				let commitCount = activity.payload.commits.filter(commit => commit.author.name != "Upptime Bot").length;
 
 				if (commitCount > 0) {
-					//console.log("Pushed", commitCount, "commits to", activity.repo.name);
+
+					let message = "";
+					if(commitCount == 1) {
+						message = "Pushed " + commitCount + " commit to " + activity.repo.name;
+					} else {
+						message = "Pushed " + commitCount + " commits to " + activity.repo.name;
+					}
 
 					this.events.push({
 						type: "CommitsPushed",
 						repo: activity.repo.name,
 						number: commitCount,
+						icon: "mdi-plus",
+						message,
 					});
 				}
 			}
@@ -158,11 +191,12 @@ export default {
 	width: 100%;
 }
 
-.dialogContainer {
-	padding: 0 1.8em;
+.activityDialogContainer {
+	overflow-y: auto;
+	margin: 15px;
 }
 
-.theme--light.v-application {
+.v-application {
 	background: transparent !important;
 }
 
@@ -170,4 +204,7 @@ export default {
 	min-height: 0;
 }
 
+.v-timeline-item__body {
+	align-self: center;
+}
 </style>

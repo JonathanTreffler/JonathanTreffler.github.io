@@ -30,6 +30,14 @@ export default {
 			}
 		},
 	},
+	watch: {
+		darkMode(val) {
+			this.$vuetify.theme.dark = val;
+		},
+	},
+	created() {
+		this.$vuetify.theme.dark = this.darkMode;
+	},
 };
 </script>
 <style>
