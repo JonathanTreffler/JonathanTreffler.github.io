@@ -47,8 +47,6 @@ export default {
 
 		let activityAPIResponse = await this.$axios.$get(activityAPIURL, {auth, });
 
-		//console.log(activityAPIResponse);
-
 		for(let activity of activityAPIResponse) {
 
 			if(activity.type == "PullRequestEvent") {
@@ -72,8 +70,6 @@ export default {
 						icon: "mdi-source-merge",
 						message,
 					});
-				} else {
-					console.log(activity);
 				}
 			}
 
@@ -88,8 +84,6 @@ export default {
 						icon: "mdi-comment",
 						message,
 					});
-				} else {
-					console.log(activity);
 				}
 			}
 
@@ -112,8 +106,6 @@ export default {
 						icon: "mdi-source-branch",
 						message,
 					});
-				} else {
-					console.log(activity);
 				}
 			}
 
@@ -139,8 +131,6 @@ export default {
 						icon: "mdi-check",
 						message,
 					});
-				} else {
-					console.log(activity);
 				}
 			}
 
