@@ -27,7 +27,7 @@ export default {
 		"@nuxtjs/eslint-module",
 		"@nuxtjs/stylelint-module",
 		"@nuxtjs/fontawesome",
-		["@nuxtjs/vuetify",{
+		[ "@nuxtjs/vuetify", {
 			/*theme: {
 				themes: {
 					light: {
@@ -36,7 +36,7 @@ export default {
 					},
 				},
 			}*/
-		}],
+		}, ],
 	],
 
 	modules: [
