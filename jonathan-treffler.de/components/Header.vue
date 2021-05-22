@@ -1,5 +1,5 @@
 <template>
-	<div class="header load-hidden" v-scroll-reveal>
+	<div class="header smoothReveal">
 		<MaterialCard>
 			<template v-slot:header>
 				<h1 style="font-size: 2.5em;">Jonathan Treffler</h1>

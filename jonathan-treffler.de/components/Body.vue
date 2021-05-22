@@ -1,7 +1,7 @@
 <template>
 	<div class="body">
 		<Favorites />
-		<MaterialCard class="load-hidden" v-scroll-reveal>
+		<MaterialCard class="smoothReveal">
 			<h2>Github Contributions:</h2>
 			<GithubContributions />
 		</MaterialCard>
@@ -29,5 +29,22 @@ export default {
 .body {
 	width: 90%;
 	margin: auto;
+}
+
+@keyframes smoothReveal {
+	from {
+		transform: translateY(8px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+.smoothReveal {
+	animation: smoothReveal;
+	animation-duration: 1s;
+	animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
 }
 </style>

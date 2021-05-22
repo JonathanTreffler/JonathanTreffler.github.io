@@ -1,5 +1,5 @@
 <template>
-	<TwoColumns class="load-hidden" v-scroll-reveal>
+	<TwoColumns class="smoothReveal">
 		<MaterialCard>
 			<PropertiesContainer>
 				<TextWithIcon icon="grin" :content="Math.floor((new Date() - new Date('11-11-2002')) / 1000 / 60 / 60 / 24 / 365.25) + ' Years'" />
