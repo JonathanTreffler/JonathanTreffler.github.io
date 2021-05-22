@@ -210,8 +210,6 @@ export default {
 			}
 
 		}
-
-		console.log(this.events);
 	},
 	fetchOnServer: true,
 };
