@@ -21,6 +21,7 @@ export default {
 
 	plugins: [
 		"~/plugins/vue-material.js",
+		"~/plugins/vue-luxon.js",
 	],
 
 	buildModules: [

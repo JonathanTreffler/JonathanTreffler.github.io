@@ -16,6 +16,8 @@
 							:key="'event-' + index"
 						>
 							<a :href="event.url" target="_blank">{{ event.message }}</a>
+							<br>
+							<relative-time :date="event.timestamp"></relative-time>
 						</v-timeline-item>
 					</v-timeline>
 				</v-app>
@@ -28,7 +30,13 @@
 </template>
 
 <script>
+import RelativeTime from "~/components/RelativeTime.vue";
+
+
 export default {
+	components: {
+		RelativeTime,
+	},
 	data() {
 		return {
 			opened: false,
