@@ -1,6 +1,5 @@
 
 export default {
-	mode: "universal",
 	target: "static",
 
 	head: {
@@ -21,17 +20,20 @@ export default {
 
 	plugins: [
 		"~/plugins/vue-material.js",
+		{ src: "~/plugins/scroll-reveal", ssr: false, },
 	],
 
 	buildModules: [
 		"@nuxtjs/eslint-module",
 		"@nuxtjs/stylelint-module",
 		"@nuxtjs/fontawesome",
+		"@nuxtjs/vuetify",
 	],
 
 	modules: [
 		"@nuxtjs/pwa",
 		"@nuxtjs/axios",
+		"@nuxtjs/dayjs",
 	],
 
 	pwa: {
@@ -80,5 +82,11 @@ export default {
 
 	stylelint: {
 		configFile: ".stylelintrc.js",
+	},
+
+	dayjs: {
+		locales: [ "en", ],
+		defaultLocale: "en",
+		plugins: [ "relativeTime", "advancedFormat", ],
 	},
 };
