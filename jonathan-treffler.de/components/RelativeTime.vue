@@ -1,5 +1,5 @@
 <template>
-	<span>{{ date | luxonRelative }}</span>
+	<span>{{ $dayjs(date).fromNow() }}</span>
 </template>
 
 <script>
