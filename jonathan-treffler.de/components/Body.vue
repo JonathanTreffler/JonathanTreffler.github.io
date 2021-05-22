@@ -37,7 +37,7 @@ export default {
 		opacity: 0;
 	}
 	to {
-		transform: translateY(0px);
+		transform: translateY(0);
 		opacity: 1;
 	}
 }
