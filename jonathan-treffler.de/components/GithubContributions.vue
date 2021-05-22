@@ -57,7 +57,9 @@ export default {
 		let activityAPIResponse = await this.$axios.$get(activityAPIURL, {auth, });
 
 		for(let activity of activityAPIResponse) {
-
+			if(!activity.public) {
+				continue;
+			}
 			if(activity.type == "PullRequestEvent") {
 				if(activity.payload.action == "opened") {
 					const message = "Opened pull request #" + activity.payload.number + " in " + activity.repo.name;
