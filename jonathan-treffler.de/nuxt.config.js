@@ -20,6 +20,7 @@ export default {
 
 	plugins: [
 		"~/plugins/vue-material.js",
+		{ src: '~/plugins/scroll-reveal', ssr: false }
 	],
 
 	buildModules: [

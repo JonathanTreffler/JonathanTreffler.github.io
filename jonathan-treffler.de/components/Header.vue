@@ -1,5 +1,5 @@
 <template>
-	<div class="header">
+	<div class="header load-hidden" v-scroll-reveal>
 		<MaterialCard>
 			<template v-slot:header>
 				<h1 style="font-size: 2.5em;">Jonathan Treffler</h1>

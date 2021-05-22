@@ -1,5 +1,5 @@
 <template>
-	<div style="padding-top: 10px;">
+	<div style="padding-top: 10px;" class="load-hidden" v-scroll-reveal>
 		<p>{{ title }}</p>
 		<div class="projectsContainer">
 			<slot />

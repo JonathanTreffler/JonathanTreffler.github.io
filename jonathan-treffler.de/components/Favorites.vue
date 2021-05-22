@@ -1,5 +1,5 @@
 <template>
-	<TwoColumns>
+	<TwoColumns class="load-hidden" v-scroll-reveal>
 		<MaterialCard>
 			<PropertiesContainer>
 				<TextWithIcon icon="grin" content="18 Years" />

@@ -30,6 +30,7 @@
     "stylelint-config-jonathantreffler": "^1.1.0",
     "stylelint-scss": "^3.18.0",
     "vue-material": "^1.0.0-beta-15",
+    "vue-scroll-reveal": "^1.0.11",
     "vuetify": "^2.5.0"
   },
   "devDependencies": {

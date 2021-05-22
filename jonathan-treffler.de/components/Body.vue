@@ -1,7 +1,7 @@
 <template>
 	<div class="body">
 		<Favorites />
-		<MaterialCard>
+		<MaterialCard class="load-hidden" v-scroll-reveal>
 			<h2>Github Contributions:</h2>
 			<GithubContributions />
 		</MaterialCard>

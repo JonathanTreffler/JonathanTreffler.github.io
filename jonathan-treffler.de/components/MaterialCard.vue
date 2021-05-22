@@ -59,4 +59,7 @@ export default {
 	padding-bottom: 16px;
 }
 
+.load-hidden {
+	visibility: hidden;
+}
 </style>

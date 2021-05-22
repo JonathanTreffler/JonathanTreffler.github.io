@@ -1,5 +1,5 @@
 <template>
-	<div class="footer">
+	<div class="footer load-hidden" v-scroll-reveal>
 		<a href="https://github.com/JonathanTreffler" target="_blank">
 			<font-awesome-icon :icon="['fab', 'github']" size="3x" alt="Jonathan Treffler | Github" />
 		</a>

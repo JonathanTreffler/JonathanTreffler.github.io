@@ -8,6 +8,7 @@
 				<v-app>
 					<v-timeline dense>
 						<v-timeline-item
+							v-scroll-reveal="{container: '.activityDialogContainer'}"
 							right
 							:icon="event.icon"
 							fill-dot color="#252F3F"
