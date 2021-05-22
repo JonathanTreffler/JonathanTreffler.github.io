@@ -15,7 +15,7 @@
 							v-for="(event, index) in events"
 							:key="'event-' + index"
 						>
-							{{ event.message }}
+							<a :href="event.url" target="_blank">{{ event.message }}</a>
 						</v-timeline-item>
 					</v-timeline>
 				</v-app>
@@ -51,7 +51,7 @@ export default {
 
 			if(activity.type == "PullRequestEvent") {
 				if(activity.payload.action == "opened") {
-					const message = "Pull Request #" + activity.payload.number + " of " + activity.repo.name + " opened";
+					const message = "Opened pull request #" + activity.payload.number + " in " + activity.repo.name;
 
 					this.events.push({
 						type: "PullRequestOpened",
@@ -59,22 +59,44 @@ export default {
 						id: activity.payload.number,
 						icon: "mdi-source-pull",
 						message,
+						url: activity.payload.pull_request.html_url,
+						timestamp: activity.created_at,
 					});
 				} else if(activity.payload.action == "closed") {
-					const message = "Pull Request #" + activity.payload.number + " of " + activity.repo.name + " closed";
+					const merged = activity.payload.pull_request.merged_at != null;
 
-					this.events.push({
-						type: "PullRequestClosed",
-						repo: activity.repo.name,
-						id: activity.payload.number,
-						icon: "mdi-source-merge",
-						message,
-					});
+					if(merged) {
+						const message = "Merged pull request #" + activity.payload.number + " in " + activity.repo.name;
+
+						this.events.push({
+							type: "PullRequestMerged",
+							repo: activity.repo.name,
+							id: activity.payload.number,
+							icon: "mdi-source-merge",
+							message,
+							url: activity.payload.pull_request.html_url,
+							timestamp: activity.created_at,
+						});
+					} else {
+						const message = "Closed pull request #" + activity.payload.number + " in " + activity.repo.name;
+
+						this.events.push({
+							type: "PullRequestClosed",
+							repo: activity.repo.name,
+							id: activity.payload.number,
+							icon: "mdi-source-branch-remove",
+							message,
+							url: activity.payload.pull_request.html_url,
+							timestamp: activity.created_at,
+						});
+					}
+
 				}
 			}
 
 			if(activity.type == "IssueCommentEvent") {
 				if(activity.payload.action == "created") {
+
 					const message = "Commented on #" + activity.payload.issue.number + " of " + activity.repo.name;
 
 					this.events.push({
@@ -83,11 +105,15 @@ export default {
 						id: activity.payload.issue.number,
 						icon: "mdi-comment",
 						message,
+						url: activity.payload.comment.html_url,
+						timestamp: activity.created_at,
 					});
 				}
 			}
 
 			if(activity.type == "CreateEvent") {
+				const url = "https://github.com/" + activity.repo.name;
+
 				if(activity.payload.ref_type == "repository") {
 					const message = "Created Repository " + activity.repo.name;
 
@@ -96,6 +122,8 @@ export default {
 						repo: activity.repo.name,
 						icon: "mdi-plus",
 						message,
+						url,
+						timestamp: activity.created_at,
 					});
 				} else if(activity.payload.ref_type == "branch") {
 					const message = "Created branch in " + activity.repo.name;
@@ -105,6 +133,8 @@ export default {
 						repo: activity.repo.name,
 						icon: "mdi-source-branch",
 						message,
+						url,
+						timestamp: activity.created_at,
 					});
 				}
 			}
@@ -112,7 +142,7 @@ export default {
 
 			if(activity.type == "IssuesEvent") {
 				if(activity.payload.action == "opened") {
-					const message = "Issue #" + activity.payload.issue.number + " of " + activity.repo.name + " opened";
+					const message = "Opened issue #" + activity.payload.issue.number + " of " + activity.repo.name;
 
 					this.events.push({
 						type: "IssueOpened",
@@ -120,9 +150,11 @@ export default {
 						id: activity.payload.issue.number,
 						icon: "mdi-alert-circle-outline",
 						message,
+						url: activity.payload.issue.html_url,
+						timestamp: activity.created_at,
 					});
 				} else if(activity.payload.action == "closed") {
-					const message = "Issue #" + activity.payload.issue.number + " of " + activity.repo.name + " closed";
+					const message = "Closed issue #" + activity.payload.issue.number + " of " + activity.repo.name;
 
 					this.events.push({
 						type: "IssueClosed",
@@ -130,6 +162,8 @@ export default {
 						id: activity.payload.issue.number,
 						icon: "mdi-check",
 						message,
+						url: activity.payload.issue.html_url,
+						timestamp: activity.created_at,
 					});
 				}
 			}
@@ -142,28 +176,27 @@ export default {
 					repo: activity.repo.name,
 					icon: "mdi-source-fork",
 					message,
+					url: activity.payload.forkee.html_url,
+					timestamp: activity.created_at,
 				});
 			}
 
 
 			if(activity.type == "PushEvent") {
-				let commitCount = activity.payload.commits.filter(commit => commit.author.name != "Upptime Bot").length;
+				let commits = activity.payload.commits.filter(commit => commit.author.name != "Upptime Bot");
 
-				if (commitCount > 0) {
+				for(let commit of commits) {
+					const message = "Created a commit in " + activity.repo.name;
 
-					let message = "";
-					if(commitCount == 1) {
-						message = "Pushed " + commitCount + " commit to " + activity.repo.name;
-					} else {
-						message = "Pushed " + commitCount + " commits to " + activity.repo.name;
-					}
+					const url = "https://github.com/" + activity.repo.name + "/commit/" + commit.sha;
 
 					this.events.push({
-						type: "CommitsPushed",
+						type: "CommitCreated",
 						repo: activity.repo.name,
-						number: commitCount,
 						icon: "mdi-source-commit",
 						message,
+						url,
+						timestamp: activity.created_at,
 					});
 				}
 			}
