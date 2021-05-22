@@ -221,6 +221,7 @@ export default {
 <style>
 .githubContributions {
 	width: 100%;
+	cursor: pointer;
 }
 
 .activityDialogContainer {
