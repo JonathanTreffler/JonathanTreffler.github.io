@@ -20,7 +20,7 @@ export default {
 
 	plugins: [
 		"~/plugins/vue-material.js",
-		{ src: '~/plugins/scroll-reveal', ssr: false }
+		{ src: "~/plugins/scroll-reveal", ssr: false, },
 	],
 
 	buildModules: [
@@ -85,8 +85,8 @@ export default {
 	},
 
 	dayjs: {
-		locales: ['en'],
-		defaultLocale: 'en',
-		plugins: ['relativeTime', 'advancedFormat'],
+		locales: [ "en", ],
+		defaultLocale: "en",
+		plugins: [ "relativeTime", "advancedFormat", ],
 	},
 };
