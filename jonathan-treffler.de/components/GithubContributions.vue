@@ -3,7 +3,7 @@
 		<img class="githubContributions" src="githubContributions.svg" alt="Github Contributions History" @click="opened = true;" />
 
 		<md-dialog :md-active.sync="opened">
-			<md-dialog-title>Aktivität</md-dialog-title>
+			<md-dialog-title>Activity</md-dialog-title>
 			<div class="activityDialogContainer">
 				<v-app>
 					<v-timeline dense>
