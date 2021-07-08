@@ -26,7 +26,7 @@
     "@nuxtjs/stylelint-module": "^4.0.0",
     "fibers": "^5.0.0",
     "nuxt": "^2.15.6",
-    "sass": "^1.32.12",
+    "sass": "^1.35.2",
     "stylelint-config-jonathantreffler": "^1.1.0",
     "stylelint-scss": "^3.18.0",
     "vue-material": "^1.0.0-beta-15",
