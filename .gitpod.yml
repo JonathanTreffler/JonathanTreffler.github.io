@@ -4,3 +4,10 @@ vscode:
 
 tasks:
   - before: printf "$wakatime" > ~/.wakatime.cfg
+  - name: Dev Server
+    init: |
+      cd jonathan-treffler.de
+      npm ci
+    command: |
+      cd jonathan-treffler.de
+      npm run dev
