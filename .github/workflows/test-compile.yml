@@ -1,0 +1,21 @@
+name: Test Compile
+
+on:
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+      
+    - name: "Install Dependencies"
+      run: npm ci
+      working-directory: jonathan-treffler.de
+      
+    - name: "Build static Website"
+      run: npm run generate
+      working-directory: jonathan-treffler.de
