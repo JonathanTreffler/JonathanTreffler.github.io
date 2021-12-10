@@ -30,7 +30,8 @@
     "stylelint-scss": "^3.18.0",
     "vue-material": "^1.0.0-beta-15",
     "vue-scroll-reveal": "^1.0.11",
-    "vuetify": "^2.5.4"
+    "vuetify": "^2.5.4",
+    "webpack": "^4.46.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.1",
