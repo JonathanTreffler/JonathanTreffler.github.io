@@ -2,7 +2,7 @@
 	<TwoColumns class="smoothReveal">
 		<MaterialCard>
 			<PropertiesContainer>
-				<TextWithIcon icon="grin" :content="Math.floor((new Date() - new Date('11-11-2002')) / 1000 / 60 / 60 / 24 / 365.25) + ' Years'" />
+				<TextWithIcon icon="grin" :content="Math.floor((new Date() - new Date(2002, 10, 11)) / 1000 / 60 / 60 / 24 / 365.25) + ' Years'" />
 				<TextWithIcon icon="flag" content="Germany" />
 				<TextWithIcon icon="building" content="Verdigado" />
 			</PropertiesContainer>
