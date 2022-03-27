@@ -20,7 +20,7 @@ jobs:
       working-directory: jonathan-treffler.de/static
     
     - name: Install xmllint
-      run: sudo apt install libxml2-utils
+      run: sudo apt update && sudo apt install libxml2-utils -y
 
     - name: Verify Contributions SVG
       run: xmllint githubContributions.svg
