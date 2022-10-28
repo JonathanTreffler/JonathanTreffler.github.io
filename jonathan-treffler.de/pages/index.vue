@@ -6,6 +6,7 @@
 			<Body />
 			<Footer />
 		</md-app-content>
+		<a rel="me" href="https://gruene.social/@JonathanTreffler"></a>
 	</md-app>
 </template>
 
