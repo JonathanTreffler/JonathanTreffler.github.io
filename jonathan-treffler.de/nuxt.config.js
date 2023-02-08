@@ -72,7 +72,7 @@ export default {
 			],
 			brands: [
 				"faGithub",
-				"faTwitter",
+				"faMastodon",
 				"faNpm",
 				"faDev",
 				"faYoutube",
