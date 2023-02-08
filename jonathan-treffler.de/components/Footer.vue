@@ -3,8 +3,8 @@
 		<a href="https://github.com/JonathanTreffler" target="_blank">
 			<font-awesome-icon :icon="['fab', 'github']" size="3x" alt="Jonathan Treffler | Github" />
 		</a>
-		<a href="https://twitter.com/treffler_j" target="_blank">
-			<font-awesome-icon :icon="['fab', 'twitter']" size="3x" alt="Jonathan Treffler | Twitter" />
+		<a rel="me" href="https://gruene.social/@JonathanTreffler" target="_blank">
+			<font-awesome-icon :icon="['fab', 'mastodon']" size="3x" alt="Jonathan Treffler | Mastodon" />
 		</a>
 		<a href="https://www.npmjs.com/~jonathan_treffler" target="_blank">
 			<font-awesome-icon :icon="['fab', 'npm']" size="3x" alt="Jonathan Treffler | NPM" />
