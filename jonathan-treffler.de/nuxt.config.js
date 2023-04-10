@@ -24,6 +24,7 @@ export default {
 	],
 
 	buildModules: [
+		"@nuxt/postcss8",
 		"@nuxtjs/eslint-module",
 		"@nuxtjs/stylelint-module",
 		"@nuxtjs/fontawesome",
