@@ -88,7 +88,7 @@
 				github-path="chickomat/arduino-control-software"
 			/>
 		</ProjectsContainer>
-		<ProjectsContainer title="School Squirrel">
+		<!--<ProjectsContainer title="School Squirrel">
 			<Project
 				name="School Squirrel"
 				icon="/projects/schoolSquirrel.webp"
@@ -104,7 +104,7 @@
 				icon="/projects/schoolSquirrel.webp"
 				github-path="SchoolSquirrel/SquirrelChatUI"
 			/>
-		</ProjectsContainer>
+		</ProjectsContainer>-->
 		<ProjectsContainer title="King of Planets">
 			<Project
 				name="King of Planets"
