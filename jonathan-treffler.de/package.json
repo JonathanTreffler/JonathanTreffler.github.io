@@ -23,7 +23,7 @@
     "@nuxtjs/dayjs": "^1.4.0",
     "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/stylelint-module": "^5.0.1",
+    "@nuxtjs/stylelint-module": "^5.2.0",
     "nuxt": "^3.14.1592",
     "postcss": "^8.4.21",
     "sass": "^1.61.0",
