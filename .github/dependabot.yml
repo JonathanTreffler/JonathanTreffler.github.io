@@ -8,13 +8,3 @@ updates:
   open-pull-requests-limit: 50
   assignees:
   - JonathanTreffler
-  ignore:
-  - dependency-name: eslint
-    versions:
-    - 7.24.0
-  - dependency-name: stylelint
-    versions:
-    - 13.11.0
-  - dependency-name: nuxt
-    versions:
-    - 2.15.1
