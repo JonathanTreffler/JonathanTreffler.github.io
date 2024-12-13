@@ -26,7 +26,7 @@
     "@nuxtjs/stylelint-module": "^5.2.0",
     "nuxt": "^3.14.1592",
     "postcss": "^8.4.21",
-    "sass": "^1.81.0",
+    "sass": "^1.83.0",
     "stylelint-config-jonathantreffler": "^1.1.0",
     "stylelint-scss": "^4.6.0",
     "vue-material": "^1.0.0-beta-16",
