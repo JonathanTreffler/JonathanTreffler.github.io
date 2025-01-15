@@ -25,7 +25,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/stylelint-module": "^5.2.0",
     "nuxt": "^3.14.1592",
-    "postcss": "^8.4.21",
+    "postcss": "^8.5.1",
     "sass": "^1.81.0",
     "stylelint-config-jonathantreffler": "^1.1.0",
     "stylelint-scss": "^4.6.0",
